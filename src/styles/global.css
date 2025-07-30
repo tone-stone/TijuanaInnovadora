@@ -1,0 +1,12 @@
+/* Estilos globales con Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-primary: #005DAA;
+    --color-highlight: #C49E4F;
+    --color-dark: #1A1A1A;
+    --color-light: #F4F4F4;
+    --color-white: #FFFFFF;
+}

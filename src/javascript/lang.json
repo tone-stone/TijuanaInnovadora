@@ -1,0 +1,22 @@
+{
+    "es": {
+        "header_title": "Tijuana Innovadora",
+        "welcome_message": "Bienvenido al sitio oficial",
+        "about_us": "Quiénes Somos",
+        "projects": "Proyectos",
+        "events": "Eventos",
+        "participate": "Participa",
+        "contact": "Contacto",
+        "donate_button": "Donar con PayPal"
+    },
+    "en": {
+        "header_title": "Tijuana Innovadora",
+        "welcome_message": "Welcome to the official site",
+        "about_us": "About Us",
+        "projects": "Projects",
+        "events": "Events",
+        "participate": "Get Involved",
+        "contact": "Contact",
+        "donate_button": "Donate with PayPal"
+    }
+}
