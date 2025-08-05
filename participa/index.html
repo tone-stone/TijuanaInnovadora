@@ -1,51 +1,11 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Participa - Tijuana Innovadora</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../src/styles/global.css">
+  <meta charset="UTF-8">
+  <title>Index</title>
 </head>
-<body class="bg-light text-dark">
-    <header class="bg-primary text-white p-4 flex justify-between items-center">
-        <h1 data-i18n="header_title" class="text-2xl font-bold">Tijuana Innovadora</h1>
-        <div>
-            <button onclick="setLanguage('es')" class="px-3 py-1 bg-highlight rounded">ES</button>
-            <button onclick="setLanguage('en')" class="px-3 py-1 bg-highlight rounded ml-2">EN</button>
-        </div>
-    </header>
-    <main class="p-6 text-center">
-        <h2 data-i18n="participate" class="text-2xl font-semibold mb-4">Participa</h2>
-        <p class="mb-6">Con tu apoyo, podemos seguir transformando Tijuana. ¡Haz tu donación hoy!</p>
-        
-        <!-- Opciones de donación -->
-        <div class="flex justify-center gap-4 mb-6">
-            <button onclick="donate(100)" class="bg-highlight text-white px-4 py-2 rounded hover:bg-primary transition">$100 MXN</button>
-            <button onclick="donate(200)" class="bg-highlight text-white px-4 py-2 rounded hover:bg-primary transition">$200 MXN</button>
-            <button onclick="donate(500)" class="bg-highlight text-white px-4 py-2 rounded hover:bg-primary transition">$500 MXN</button>
-        </div>
-        
-        <!-- Monto personalizado -->
-        <div class="flex justify-center items-center gap-2">
-            <input id="customAmount" type="number" placeholder="Otro monto" 
-                   class="border p-2 rounded w-32">
-            <button onclick="customDonation()" 
-                    class="bg-highlight text-dark px-4 py-2 rounded hover:bg-primary transition"
-                    data-i18n="donate_button">Donar con PayPal</button>
-        </div>
-    </main>
-    <footer class="bg-dark text-white p-4 text-center">
-        <p>&copy; 2025 Tijuana Innovadora</p>
-    </footer>
-    <script src="../src/javascript/global.js"></script>
-    <script src="../src/javascript/lang.js"></script>
-    <script src="../src/javascript/paypal.js"></script>
-    <script>
-        function customDonation() {
-            const amount = document.getElementById('customAmount').value || 100;
-            donate(amount);
-        }
-    </script>
+<body>
+  <h1>Index</h1>
 </body>
 </html>
