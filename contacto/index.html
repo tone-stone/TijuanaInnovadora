@@ -32,7 +32,7 @@
         </div>
         <!-- Menú -->
         <nav class="hidden md:flex gap-6 text-sm font-semibold">
-          <a href="/" class="hover:underline">Inicio</a>
+          <a href="../" class="hover:underline">Inicio</a>
           <a href="../quienes-somos">Quiénes Somos</a>
           <a href="../esferas-proyectos">Esferas y Proyectos</a>
           <a href="../eventos">Eventos</a>
@@ -44,58 +44,83 @@
       </div>
     </header>
 
-    <!-- Contenido central -->
-    <div class="relative z-10 h-full flex flex-col justify-center items-start px-6 max-w-4xl mx-auto text-white">
-      <p class="text-sm tracking-[0.3em] font-semibold mb-2">TIJUANA INNOVADORA</p>
-      <h1 class="text-6xl md:text-7xl font-extrabold leading-tight mb-4">CONTACTO<br /></h1>
-      <p class="text-lg font-medium text-white/90 mb-6 max-w-xl">
-        Imagina una iniciativa que logró transformar una ciudad y convertirse en un movimiento ciudadano con presencia
-        global. Esa es Tijuana Innovadora.
-      </p>
+   
 
-      <!-- Botón + Redes -->
-      <div class="flex flex-col md:flex-row md:items-center gap-4">
-        <a href="#"
-          class="bg-white text-[#005DAA] px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Más
-          información</a>
-        <div class="flex items-center gap-4 text-xl">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fas fa-envelope"></i></a>
+  <!--Contacto-->
+    <section id="contacto" class="py-20 bg-gradient-to-br from-gray-950 to-gray-900 border-t border-purple-900">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-purple-300 mb-8 tracking-tight text-center">Contáctanos
+            </h2>
+            <div class="flex flex-col md:flex-row gap-10 items-center justify-between">
+                <!-- Formulario -->
+                <div class="w-full md:w-1/2 animate__animated animate__fadeInLeft">
+                    <form id="contactoForm" class="space-y-6" action="https://formspree.io/f/xwpbgpkr" method="POST">
+                        <div class="relative group">
+                            <input type="text" name="name" required placeholder="Tu Nombre"
+                                class="w-full px-5 py-3 rounded-2xl bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-400 shadow-lg transition duration-200 focus:scale-105 group-hover:scale-105 input-contact" />
+                            <span
+                                class="absolute top-3 left-3 text-purple-400 opacity-0 group-hover:opacity-80 transition"><i
+                                    class="fas fa-user"></i></span>
+                        </div>
+                        <div class="relative group">
+                            <input type="email" name="email" required placeholder="Tu Email"
+                                class="w-full px-5 py-3 rounded-2xl bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-400 shadow-lg transition duration-200 focus:scale-105 group-hover:scale-105 input-contact" />
+                            <span
+                                class="absolute top-3 left-3 text-purple-400 opacity-0 group-hover:opacity-80 transition"><i
+                                    class="fas fa-envelope"></i></span>
+                        </div>
+                        <div class="relative group">
+                            <textarea name="mensaje" rows="4" required placeholder="¿En qué te ayudamos?"
+                                class="w-full px-5 py-3 rounded-2xl bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-400 shadow-lg transition duration-200 focus:scale-105 group-hover:scale-105 input-contact"></textarea>
+                            <span
+                                class="absolute top-3 left-3 text-purple-400 opacity-0 group-hover:opacity-80 transition"><i
+                                    class="fas fa-comment-dots"></i></span>
+                        </div>
+                        <!-- evita bots -->
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <p id="estadoForm" class="hidden text-purple-300 text-sm"></p>
+
+                        <button type="submit"
+                            class="relative bg-gradient-to-r from-purple-700 via-indigo-600 to-purple-400 hover:from-purple-600 hover:to-indigo-500 px-10 py-3 rounded-full font-bold shadow-lg transition-all duration-300 text-lg text-white outline-none focus:ring-2 focus:ring-purple-400 focus:scale-110 animate-fadein">
+                            <span class="inline-flex items-center gap-2"><i class="fas fa-paper-plane"></i> Enviar
+                                mensaje</span>
+                        </button>
+                    </form>
+                    <div class="mt-10 text-gray-400 text-left space-y-3">
+                        <p class="flex items-center gap-2">
+                            <i class="fab fa-whatsapp text-green-400 text-xl animate-pulse"></i>
+                            <a href="https://wa.me/526643425615" target="_blank"
+                                class="text-green-400 hover:underline font-semibold">664 342 56 15</a>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="fas fa-globe text-purple-400 text-xl animate-spin-slow"></i>
+                            <a href="https://techplacetj.com" target="_blank"
+                                class="text-purple-400 hover:underline font-semibold">www.techplacetj.com</a>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="fab fa-facebook-square text-blue-400 text-xl animate-pulse"></i>
+                            <a href="https://facebook.com/techplacetijuana" target="_blank"
+                                class="text-blue-400 hover:underline font-semibold">/techplacetj</a>
+                        </p>
+                        <p class="flex items-center gap-2 text-xs">
+                            <i class="fas fa-map-marker-alt text-purple-400"></i> Tijuana, B.C. | Lun-Vie 10am-4pm
+                        </p>
+                    </div>
+                </div>
+                <!-- Imagen Ilustrativa -->
+                <div class="hidden md:block md:w-1/2 animate__animated animate__fadeInRight">
+                    <img src="assets/img/logos/Techplace logos-01.webp" alt="Ilustración contacto"
+                        class="w-3/4 md:w-full max-w-xl mx-auto rounded-2xl shadow-lg ring-2 ring-purple-800 animate-pulse"
+                        loading="lazy">
+
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- INTRO Section -->
-  <section class="max-w-7xl mx-auto px-4 py-16 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-[#005DAA] mb-6">¿Qué es Tijuana Innovadora?</h2>
-    <p class="text-lg text-gray-700 max-w-3xl mx-auto">Una plataforma que integra y promueve iniciativas sociales,
-      culturales, científicas y tecnológicas para detonar el desarrollo de nuestra región.</p>
-  </section>
-
-  <!-- 3 COLUMNS Section -->
-  <section class="bg-[#F4F4F4] py-16">
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
-      <div>
-        <img src="./src/assets/icons/icon1.svg" alt="Esferas" class="mx-auto mb-4 w-20 h-20">
-        <h3 class="text-xl font-semibold text-[#005DAA] mb-2">Esferas</h3>
-        <p class="text-gray-600">Áreas clave que promueven el bienestar e innovación en la comunidad.</p>
-      </div>
-      <div>
-        <img src="./src/assets/icons/icon2.svg" alt="Eventos" class="mx-auto mb-4 w-20 h-20">
-        <h3 class="text-xl font-semibold text-[#005DAA] mb-2">Eventos</h3>
-        <p class="text-gray-600">Encuentros que inspiran y conectan a la sociedad tijuanense.</p>
-      </div>
-      <div>
-        <img src="./src/assets/icons/icon3.svg" alt="Participa" class="mx-auto mb-4 w-20 h-20">
-        <h3 class="text-xl font-semibold text-[#005DAA] mb-2">Participa</h3>
-        <p class="text-gray-600">Involúcrate con nuestras actividades y forma parte del cambio.</p>
-      </div>
-    </div>
-  </section>
-
+ 
 
   <!-- Hero -->
   <section class="bg-cover bg-center h-[60vh] flex items-center justify-center text-white"

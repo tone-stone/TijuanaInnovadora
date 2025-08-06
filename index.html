@@ -12,6 +12,288 @@
   <link rel="stylesheet" href="./src/styles/fonts.css">
   <link rel="stylesheet" href="./src/styles/layout.css">
   <link rel="icon" type="image/png" href="./src/assets/icons/favicon.png">
+
+   <!-- TailwindCSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN (versión 6, gratis) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Swiper CSS (colócalo debajo de Tailwind y encima de tu <style>) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <style>
+        html,
+        body {
+            background: #09090f !important;
+            color: #fff;
+        }
+
+        /* Si usas contenedores, ponles también fondo oscuro */
+        .container,
+        .whole-wrap,
+        .box_1170 {
+            background: transparent !important;
+        }
+
+        .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: 0;
+            filter: brightness(0.60) blur(1.2px);
+            background: url('assets/img/backup-dark-bg.webp') center center/cover no-repeat;
+        }
+
+        .hero-content,
+        .hero-overlay {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(120deg, rgba(10, 10, 20, 0.555) 60%, rgba(50, 17, 80, 0.459) 100%);
+            z-index: 1;
+        }
+
+        /* NUEVO: anima el <h1> solamente cuando la slide está activa */
+        .heroSwiper .swiper-slide-active h1 {
+            animation: fadein 1s cubic-bezier(.4, 0, .2, 1);
+        }
+
+
+        .icon-glow {
+            transition: box-shadow 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        .icon-glow:hover {
+            color: #c084fc;
+            box-shadow: 0 4px 24px 0 #c084fc55, 0 1.5px 0 #a21caf;
+            transform: scale(1.12) rotate(-4deg);
+        }
+
+        .branding-img {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .branding-img:hover {
+            transform: scale(1.08) rotate(-2deg);
+            box-shadow: 0 8px 32px 0 rgba(120, 0, 180, 0.18);
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #c084fc;
+            filter: drop-shadow(0 1px 8px #000);
+        }
+
+        .swiper-pagination-bullet {
+            background: #c084fc;
+            opacity: 0.7;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #9333ea;
+            opacity: 1;
+        }
+
+        .navbar-bg-light {
+            background: rgba(16, 16, 32, 0.15);
+            /* negro con opacidad 15% */
+            transition: background 0.3s;
+        }
+
+        .navbar-bg-dark {
+            background: rgba(16, 16, 32, 0.95);
+            /* negro con opacidad 95% */
+            transition: background 0.3s;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadein {
+            animation: fadein 1.2s cubic-bezier(.4, 0, .2, 1);
+        }
+
+        .hero-content>* {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadein 1s cubic-bezier(.4, 0, .2, 1) forwards;
+        }
+
+        .hero-content>*:nth-child(1) {
+            animation-delay: .4s;
+        }
+
+        .hero-content>*:nth-child(2) {
+            animation-delay: .8s;
+        }
+
+        .hero-content>*:nth-child(3) {
+            animation-delay: 1.2s;
+        }
+
+        .hero-content>*:nth-child(4) {
+            animation-delay: 1.6s;
+        }
+
+        /* --- Subrayado animado para navbar --- */
+        .nav-link-underline {
+            position: relative;
+            display: inline-block;
+            color: #e9d5ff;
+            /* Tailwind text-purple-200 */
+            transition: color 0.25s cubic-bezier(.4, 0, .2, 1);
+            padding-bottom: 3px;
+        }
+
+        .nav-link-underline::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0%;
+            height: 2.5px;
+            background: linear-gradient(90deg, #a21caf, #6366f1, #d946ef);
+            border-radius: 2px;
+            transition: width 0.32s cubic-bezier(.4, 0, .2, 1), left 0.32s cubic-bezier(.4, 0, .2, 1);
+            z-index: 1;
+        }
+
+        .nav-link-underline:hover,
+        .nav-link-underline:focus {
+            color: #a21caf !important;
+            /* Tailwind purple-700 */
+        }
+
+        .nav-link-underline:hover::after,
+        .nav-link-underline:focus::after {
+            width: 100%;
+            left: 0;
+        }
+
+        /* Para que la transición sea más fluida */
+        .nav-link-underline:not(:hover)::after {
+            width: 0;
+            left: 50%;
+        }
+
+        .nav-link-underline.active::after {
+            width: 100%;
+            left: 0;
+            opacity: 1;
+        }
+
+        .nav-link-underline.active {
+            color: #fff;
+        }
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+                transform: translateY(35px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadein {
+            animation: fadein 1s cubic-bezier(.4, 0, .2, 1) both;
+        }
+
+        .icon-glow {
+            filter: drop-shadow(0 0 8px #c4b5fd88) drop-shadow(0 0 2px #a78bfa55);
+        }
+
+        /* Botones redes */
+        /* Tailwind utilities “desempacadas” */
+        .social-btn {
+            width: 2.5rem;
+            /* w-10            */
+            height: 2.5rem;
+            /* h-10            */
+            display: flex;
+            /* flex            */
+            align-items: center;
+            /* items-center    */
+            justify-content: center;
+            /* justify-center  */
+
+            border-radius: 9999px;
+            /* rounded-full    */
+            border: 1px solid #a855f7;
+            /* border-purple-500 */
+            color: #d8b4fe;
+            /* text-purple-300 */
+
+            transition: all 0.2s ease;
+            /* transition      */
+            transform: translateY(0);
+            /* base position   */
+
+            box-shadow: 0 0 8px #7c3aed55, 0 0 2px #7c3aed77;
+            /* tu glow */
+        }
+
+        .social-btn:hover {
+            background-color: #7c3aed;
+            /* hover:bg-purple-600 */
+            color: #ffffff;
+            /* hover:text-white    */
+            transform: translateY(-0.25rem);
+            /* hover:-translate-y-1 */
+        }
+
+        /* líneas de la hamburguesa */
+        .line {
+            width: 1.75rem;
+            height: 2px;
+            margin: .22rem 0;
+            background: #d8b4fe;
+            transition: all .35s cubic-bezier(.4, 0, .2, 1);
+        }
+
+        /* estado “X” */
+        #menu-btn.open .line:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        #menu-btn.open .line:nth-child(2) {
+            opacity: 0;
+        }
+
+        #menu-btn.open .line:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        .backdrop-filter {
+            backdrop-filter: blur(8px);
+        }
+    </style>
 </head>
 
 <body class="bg-white text-gray-900 font-sans">
@@ -200,15 +482,251 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-[#1A1A1A] text-white py-6">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <p>&copy; 2025 Tijuana Innovadora. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+    <!-- FOOTER -->
+    <footer id="footer"
+        class="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-950 to-black py-16 text-gray-300">
+        <!-- Separador ondulado -->
+        <svg class="absolute top-0 left-0 w-full -translate-y-1" viewBox="0 0 1440 150" preserveAspectRatio="none">
+            <path
+                d="M0,96L48,80C96,64,192,32,288,42.7C384,53,480,107,576,112C672,117,768,75,864,64C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64V0H0Z"
+                fill="#09090f"></path>
+        </svg>
+
+        <!-- Contenido -->
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <!-- Logo & Claim -->
+                <div class="flex flex-col items-start animate__animated animate__fadeInLeft">
+                    <img src="assets/img/logos/Techplace logo07.webp" class="h-20 mb-3 drop-shadow-2xl"
+                        alt="TechPlace logo">
+                    <p class="text-sm leading-relaxed">
+                        Desarrollo Web &nbsp;|&nbsp; Cyberseguridad <br>
+                        Innovación que protege tu futuro digital.
+                    </p>
+                </div>
+
+                <!-- Navegación rápida -->
+                <div class="animate__animated animate__fadeInUp animate__delay-1s">
+                    <h4 class="text-purple-400 font-bold mb-4">Navegación</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-purple-300 transition">Inicio</a></li>
+                        <li><a href="#servicios" class="hover:text-purple-300 transition">Servicios</a></li>
+                        <li><a href="#nosotros" class="hover:text-purple-300 transition">Nosotros</a></li>
+                        <li><a href="#portafolio" class="hover:text-purple-300 transition">Portafolio</a></li>
+                        <li><a href="#contacto" class="hover:text-purple-300 transition">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Datos de contacto -->
+                <div class="animate__animated animate__fadeInUp animate__delay-2s">
+                    <h4 class="text-purple-400 font-bold mb-4">Contacto</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone-alt text-purple-400"></i>
+                            <a href="tel:6643425615" class="hover:text-purple-300 transition">664 342 56 15</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-purple-400"></i>
+                            <a href="mailto:info@techplacetj.com" class="hover:text-purple-300 transition">
+                                info@techplacetj.com
+                            </a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-purple-400"></i>
+                            <span>Tijuana, B.C.</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="far fa-clock text-purple-400"></i>
+                            <span>Lun-Vie 10 am – 4 pm</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mapa + RRSS -->
+                <div class="flex flex-col gap-4 animate__animated animate__fadeInRight animate__delay-1s">
+                    <!-- Mapa responsivo -->
+                    <div class="overflow-hidden rounded-xl shadow-lg ring-1 ring-purple-700/30">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13421.5729!2d-117.041!3d32.511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94987f0e7bf3f%3A0x8d0ffb!2sLas%20Brisas%2C%20Tijuana%2C%20B.C.!5e0!3m2!1ses-419!2smx!4v0000000000000"
+                            style="border:0; width:100%; height:160px;" allowfullscreen="" loading="lazy" title="mapa"></iframe>
+                    </div>
+
+                    <!-- Redes -->
+                    <div class="flex gap-5 justify-center lg:justify-start">
+                        <a href="https://facebook.com/techplacetijuana" target="_blank" class="social-btn" aria-label="Entar">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/526643425615" target="_blank" class="social-btn" aria-label="Entar">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/techplacetj" target="_blank" class="social-btn" aria-label="Entar">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/tone-stone" target="_blank" class="social-btn" aria-label="Entar">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Línea inferior -->
+            <div class="mt-12 border-t border-purple-800/40 pt-6 text-center text-xs text-gray-500">
+                © 2025 TechPlace – Todos los derechos reservados.
+            </div>
+        </div>
+
+        <!-- Partículas decorativas -->
+        <span
+            class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_10%_10%,rgba(147,51,234,0.15)_0,transparent_40%),radial-gradient(circle_at_90%_80%,rgba(76,29,149,0.12)_0,transparent_40%)]"></span>
+    </footer>
 
   <!-- Scripts -->
   <script src="./src/scripts/language.js"></script>
   <script src="./src/scripts/app.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            /* Hero */
+            const heroEl = document.querySelector('.heroSwiper');
+            if (heroEl) new Swiper(heroEl, {
+                effect: 'fade',
+                fadeEffect: { crossFade: true },
+                loop: true,
+                autoplay: { delay: 2800, disableOnInteraction: false },
+                allowTouchMove: false
+            });
+
+            /* Portafolio */
+            const portEl = document.querySelector('.portafolioSwiper');
+            if (portEl) new Swiper(portEl, {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: { delay: 2000 },
+                effect: 'coverflow',
+                coverflowEffect: { rotate: 20, depth: 150, slideShadows: true },
+                pagination: { el: '.portafolio-pagination', clickable: true },
+                navigation: { nextEl: '.portafolio-next', prevEl: '.portafolio-prev' },
+                breakpoints: { 768: { slidesPerView: 2 }, 1200: { slidesPerView: 3 } }
+            });
+
+            /* Branding */
+            const brandEl = document.querySelector('.brandingSwiper');
+            if (brandEl) new Swiper(brandEl, {
+                slidesPerView: 2,
+                loop: false,
+                breakpoints: { 640: { slidesPerView: 3 }, 1024: { slidesPerView: 4 } }
+            });
+
+            /* =======  Nav + Tilt  etc…  ======= */
+            // (Tu código navbar y tilt tal cual)
+
+
+
+
+            // Navbar fondo oscuro scroll
+            window.addEventListener('scroll', function () {
+                const navbar = document.getElementById('navbar');
+                if (window.scrollY > 30) {
+                    navbar.classList.remove('navbar-bg-light');
+                    navbar.classList.add('navbar-bg-dark');
+                } else {
+                    navbar.classList.add('navbar-bg-light');
+                    navbar.classList.remove('navbar-bg-dark');
+                }
+            });
+
+            // Tilt efecto en cards de servicios
+            document.querySelectorAll('[data-tilt]').forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    const rotateX = (y / rect.height) * 10;
+                    const rotateY = (x / rect.width) * -10;
+                    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.045)`;
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = '';
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('animate__fadeInUp');
+                        observer.unobserve(e.target);
+                    }
+                });
+            }, { threshold: .15 });
+
+            document.querySelectorAll('#footer [class*="animate__"]').forEach(el => observer.observe(el));
+        });
+
+        document.getElementById('contactoForm').addEventListener('submit', async e => {
+            e.preventDefault();
+            const form = e.target;
+            const estado = document.getElementById('estadoForm');
+            estado.textContent = 'Enviando…'; estado.classList.remove('hidden');
+
+            const res = await fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (res.ok) {
+                estado.textContent = '¡Mensaje enviado! Te responderemos pronto 😊';
+                form.reset();                       // ← limpia los campos
+            } else {
+                estado.textContent = 'Error al enviar. Intenta de nuevo o contáctanos por WhatsApp.';
+                estado.classList.add('text-red-400');
+            }
+        });
+
+        // Espera que el DOM exista
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeBtn = document.getElementById('menu-close');
+
+            function toggleMenu() {
+                mobileMenu.classList.toggle('scale-0');
+                mobileMenu.classList.toggle('opacity-1');
+                mobileMenu.classList.toggle('pointer-events-none');
+                menuBtn.classList.toggle('open');
+            }
+
+            menuBtn.addEventListener('click', toggleMenu);
+            closeBtn.addEventListener('click', toggleMenu);       // “X”
+        });
+
+
+
+        function toggleMenu() { document.getElementById('menu-btn').click(); }
+    </script>
+
+
+ <!-- Botón flotante de WhatsApp 
+    <a href="https://wa.me/" target="_blank"
+        class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 "
+        aria-label="WhatsApp" title="¡Envíanos un WhatsApp!"> <span
+            class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-60 animate-ping"></span>
+        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 32 32">
+            <path
+                d="M16 2.938c-7.308 0-13.25 5.943-13.25 13.25 0 2.338.617 4.633 1.781 6.663l-2.032 6.396a1 1 0 0 0 1.26 1.26l6.398-2.033c2.029 1.164 4.323 1.782 6.661 1.782 7.308 0 13.25-5.943 13.25-13.25s-5.943-13.25-13.25-13.25zm0 24.062a11.155 11.155 0 0 1-5.654-1.541l-.403-.236-4.165 1.324 1.324-4.166-.237-.402a11.224 11.224 0 1 1 9.135 4.89zm6.233-8.418c-.087-.145-.32-.232-.672-.406-.352-.174-2.086-1.025-2.41-1.142-.324-.116-.561-.174-.798.174-.237.348-.916 1.142-1.124 1.377-.209.233-.414.262-.766.087-.352-.174-1.486-.547-2.83-1.743-1.046-.936-1.753-2.093-1.96-2.441-.204-.349-.022-.535.153-.708.158-.157.352-.406.528-.609.174-.201.232-.348.353-.58.116-.233.058-.436-.029-.609-.086-.174-.798-1.924-1.092-2.635-.287-.692-.58-.598-.798-.609-.206-.008-.442-.009-.678-.009s-.623.09-.951.436c-.328.348-1.247 1.219-1.247 2.974 0 1.755 1.28 3.448 1.458 3.688.174.232 2.519 3.85 6.114 5.247.854.295 1.52.471 2.041.601.857.205 1.638.176 2.255.107.688-.078 2.085-.852 2.379-1.677.295-.826.295-1.534.206-1.677z" />
+        </svg>
+
+
+    </a> -->
+
 </body>
 
 </html>
