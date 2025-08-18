@@ -84,8 +84,8 @@
      "@context": "https://schema.org",
      "@type": "Organization",
      "name": "Tijuana Innovadora",
-     "url": "https://www.tijuanainnovadora.com",
-     "logo": "https://www.tijuanainnovadora.com/src/assets/icons/favicon.png",
+     "url": "https://www.tijuanainnovadora.org",
+     "logo": "https://www.tijuanainnovadora.com/src/assets/logos-organización/LogoTI-01.png",
      "description": "Movimiento ciudadano que impulsa el arte, la ciencia, la tecnología y el desarrollo sostenible en Tijuana.",
      "sameAs": [
        "https://www.facebook.com/tijuanainnovadora",
@@ -94,6 +94,96 @@
         ]
     }
   </script>
+
+    <style>
+        /* Animación para el SVG de olas */
+        @keyframes svgloop {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-svgloop {
+            animation: svgloop 18s linear infinite;
+        }
+
+        /* Gradiente animado (para texto, etc) */
+        @keyframes animate-gradient-x {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .animate-gradient-x {
+            background-size: 200% 200%;
+            animation: animate-gradient-x 5s ease-in-out infinite;
+        }
+
+        /* Fade-in hacia arriba */
+        @keyframes fade-in-up {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fade-in-up 1.2s cubic-bezier(.5, 0, .5, 1) both;
+        }
+
+        /* Rebote lento (botones) */
+        @keyframes bounce-slow {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animate-bounce-slow {
+            animation: bounce-slow 2.4s infinite;
+        }
+
+        /* Wiggle (temblor breve, por ejemplo hashtags o decorativos) */
+        @keyframes wiggle {
+
+            0%,
+            100% {
+                transform: rotate(-2deg);
+            }
+
+            50% {
+                transform: rotate(2deg);
+            }
+        }
+
+        .animate-wiggle {
+            animation: wiggle 0.35s 2;
+        }
+    </style>
+
+
+
+
 </head>
 
 <body class="bg-white text-gray-900 font-sans">
@@ -103,7 +193,7 @@
         <!--Inicio Menu y Banner-->
         <section class="relative h-screen w-full bg-cover bg-center bg-no-repeat"
             style="background-image: url('./src/assets/images/InicioBanner.webp');">
-           
+
             <!--   Overlay oscuro -->
             <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
@@ -164,8 +254,9 @@
                         <a href="./eventos">Eventos</a>
                         <a href="./participa">Participa</a>
                         <a href="./contacto">Contacto</a>
-                        <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" alt="English" class="h-5 rounded-full">
-                        <i class="fas fa-search"></i>
+                        <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" alt="English"
+                            class="h-5 rounded-full">
+                        <!-- <i class="fas fa-search"></i> -->
                     </nav>
                 </div>
             </header>
@@ -174,7 +265,8 @@
             <div
                 class="relative z-10 h-full flex flex-col justify-center items-start px-6 max-w-4xl mx-auto text-white">
                 <p class="text-sm tracking-[0.3em] font-semibold mb-2">TIJUANA INNOVADORA</p>
-                <h1 class="font-extrabold leading-tight mb-4" style="font-size: clamp(2rem, 5vw + 1rem, 4.5rem);">
+                <h1 class="font-extrabold leading-tight mb-4" style="font-size: clamp(2rem, 5vw + 1rem, 4.5rem);"
+                    data-aos="fade-right">
                     SOMOS UN <br />MOVIMIENTO
                 </h1>
 
@@ -198,89 +290,260 @@
             </div>
         </section>
 
-        <!-- INTRO Section con AOS -->
-        <section class="bg-primary text-white py-20">
-            <div class="max-w-5xl mx-auto px-6 text-center">
-                <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6" data-aos="fade-up">
+        <!-- SECCIÓN: INNOVACIÓN EN CONSTANTE MOVIMIENTO (MODERNA) -->
+        <section class="relative overflow-hidden bg-[f4f4f4] py-20 text-gray-200">
+            <!-- SVG animado: fondo, ondas abajo, SIEMPRE relleno -->
+            <div class="absolute bottom-0 left-0 w-full h-[150px] overflow-hidden pointer-events-none rotate-180 z-0">
+                <div class="w-[200%] h-full flex animate-svgloop">
+                    <svg class="w-1/2 h-full opacity-10" viewBox="0 0 1440 150" preserveAspectRatio="none">
+                        <path
+                            d="M0,96L48,80C96,64,192,32,288,42.7C384,53,480,107,576,112C672,117,768,75,864,64C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64V0H0Z"
+                            fill="#01426A" fill-opacity="0.9" />
+                    </svg>
+                    <svg class="w-1/2 h-full opacity-10" viewBox="0 0 1440 150" preserveAspectRatio="none">
+                        <path
+                            d="M0,96L48,80C96,64,192,32,288,42.7C384,53,480,107,576,112C672,117,768,75,864,64C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64V0H0Z"
+                            fill="#01426A" fill-opacity="0.9" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Glow animado de fondo -->
+            <div class="absolute inset-0 pointer-events-none z-0">
+                <div
+                    class="absolute left-1/3 top-1/4 w-[35vw] h-[35vw] bg-[radial-gradient(ellipse_at_center,rgba(196,158,79,0.12)_0,transparent_70%)] blur-3xl animate-pulse">
+                </div>
+            </div>
+
+            <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-6 bg-gradient-to-r from-[#C49E4F] via-grey to-[#005DAA] bg-clip-text text-transparent animate-gradient-x drop-shadow-lg shadow-accent"
+                    data-aos="fade-left">
                     INNOVACIÓN EN <span class="text-accent">CONSTANTE MOVIMIENTO</span>
                 </h2>
-                <p class="text-lg md:text-xl text-white/90 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                <p class="text-lg md:text-xl text-black/80 leading-relaxed mb-6 animate-fade-in-up"
+                    data-aos="fade-right" data-aos-delay="200">
                     Tijuana Innovadora es una plataforma que impulsa el cambio a través de iniciativas sociales,
-                    culturales, científicas y tecnológicas. Nuestro objetivo es detonar el desarrollo sostenible de
-                    nuestra región con impacto global.
+                    culturales, científicas y tecnológicas.
                 </p>
+                <!-- Línea luminosa decorativa -->
+                <div
+                    class="mx-auto mb-8 w-32 h-1 rounded-full bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] animate-pulse">
+                </div>
+                <!-- CTA animado -->
+                <a href="#esferas"
+                    class="mt-2 inline-flex items-center gap-2 px-8 py-3 rounded-full bg-highlight/90 hover:bg-highlight text-primary font-bold shadow-lg transition-all duration-300 scale-100 hover:scale-105 ring-2 ring-accent focus:ring-4 focus:ring-accent/30 animate-bounce-slow"
+                    data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    Explora nuestras esferas
+                </a>
             </div>
         </section>
 
-        <!-- 3 COLUMNS Section -->
-        <section class="bg-[#F4F4F4] py-16">
-            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
-                <div>
-                    <img src="./src/assets/logos-organización/Arte-Industria/ESFERAS-01.png" alt="Esferas"
-                        class="mx-auto mb-4 w-20 h-20">
-                    <h3 class="text-xl font-semibold text-[#005DAA] mb-2">Arte en la industria</h3>
-                    <p class="text-gray-600">Áreas clave que promueven el bienestar e innovación en la comunidad.</p>
+        <!-- SECCIÓN BIENVENIDA TIJUANA INNOVADORA CON VIDEO -->
+        <section
+            class="relative bg-[f4f4f4] overflow-hidden py-16 md:py-24">
+            <!-- Fondo decorativo dinámico -->
+            <div class="absolute inset-0 pointer-events-none z-0">
+                <div
+                    class="w-full h-full bg-[f4f4f4]">
                 </div>
-                <div>
-                    <img src="./src/assets/logos-organización/Casa-Ideas/Logo_CasadelasIdeas-4.png" alt="Eventos"
-                        class="mx-auto mb-4 w-20 h-20">
+            </div>
+
+            <div class="relative z-10 flex flex-col items-center justify-center max-w-3xl mx-auto px-4 text-center">
+                <!-- Logo animado -->
+                <div data-aos="zoom-in" class="mb-6 flex items-center justify-center">
+                    <img src="./src/assets/logos-organización/Cabeza TI.png"
+                        class="h-20 w-20 md:h-24 md:w-24 rounded-full shadow-2xl ring-4 ring-highlight/40 animate-pulse hover:scale-105 transition duration-300"
+                        alt="Tijuana Innovadora Logo">
+                </div>
+                <!-- Encabezado con gradiente -->
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4 bg-gradient-to-r from-[#C49E4F] via-grey to-[#005DAA] bg-clip-text text-transparent animate-gradient-x drop-shadow-lg"
+                    data-aos="fade-right">
+                    ¡Bienvenid@ a <span class="text-highlight">Tijuana Innovadora</span>!
+                </h2>
+                <!-- Descripción -->
+                <p class="text-lg md:text-xl text-black/90 font-medium leading-relaxed mb-6 animate-fade-in-up"
+                    data-aos="fade-left" data-aos-delay="250">
+                    Somos un movimiento ciudadano que une talento, creatividad y visión para transformar la ciudad a
+                    través del <span class="font-semibold text-accent">arte</span>, la <span
+                        class="font-semibold text-accent">ciencia</span>, la <span
+                        class="font-semibold text-accent">tecnología</span> y el <span
+                        class="font-semibold text-accent">compromiso social</span>.
+                    <br>
+                    <span class="block mt-2 text-black/80">Creemos que la innovación nace de la colaboración y la pasión
+                        de nuestra comunidad.</span>
+                </p>
+
+                <!-- VIDEO de Bienvenida (elige la opción que prefieras) -->
+                <div class="relative w-full max-w-2xl mx-auto rounded-3xl shadow-2xl overflow-hidden mb-6"
+                    data-aos="zoom-in-up" data-aos-delay="400">
+                    <!-- Opción 1: Video MP4 local -->
+                    <!--
+      <video autoplay loop muted playsinline class="w-full aspect-video object-cover">
+        <source src="./src/assets/videos/bienvenida-tijuana.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+      -->
+                    <!-- Opción 2: Video de YouTube embebido -->
+
+                    <iframe class="w-full aspect-video" title="Bienvenida Tijuana Innovadora" frameborder="0"
+                        src="https://www.youtube.com/embed/4_-j1c4Oo0Y?si=fijR5NaYgsuKEj-L"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <!-- CTA animado -->
+                <a href="#esferas"
+                    class="mt-4 inline-flex items-center gap-2 px-7 py-3 rounded-full bg-accent/90 hover:bg-accent text-white font-bold shadow-lg transition-all duration-300 scale-100 hover:scale-105 focus:ring-4 ring-accent/40 animate-bounce-slow"
+                    data-aos="zoom-in-up" data-aos-delay="700">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    Descubre nuestras esferas de impacto
+                </a>
+            </div>
+
+            <!-- Ondas SVG decorativas (bottom) -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none z-0">
+                <svg class="w-full h-[100px] md:h-[130px]" viewBox="0 0 1440 150" fill="none"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M0,80L60,77.7C120,75,240,69,360,74.7C480,80,600,96,720,96C840,96,960,80,1080,69.3C1200,59,1320,53,1380,50.7L1440,48V150H0Z"
+                        fill="#F4F4F4" fill-opacity="1" />
+                </svg>
+            </div>
+        </section>
+
+        <!-- 3 COLUMNS Section Esferas -->
+        <section class="relative overflow-hidden py-24 bg-[#F4F4F4]">
+            <!-- Glow/acento de fondo -->
+            <div class="absolute inset-0 pointer-events-none">
+                <div
+                    class="absolute top-1/2 left-1/2 w-[60vw] h-[60vw] bg-gradient-to-br from-[#C49E4F]/20 via-[#005DAA]/10 to-transparent blur-3xl rounded-full -translate-x-1/2 -translate-y-1/2 animate-pulse opacity-60">
+                </div>
+            </div>
+
+            <!-- Intro -->
+            <div class="relative z-10 py-10 px-4 text-center max-w-5xl mx-auto group" data-aos="fade-up"
+                data-aos-duration="1200">
+                <h2
+                    class="inline-block text-3xl md:text-4xl font-extrabold tracking-tight mb-6
+            bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] bg-clip-text text-transparent animate-gradient-x drop-shadow-lg shadow-primary">
+                    NUESTRAS ESFERAS
+                </h2>
+                <div
+                    class="mx-auto mb-8 w-32 h-1 rounded-full bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] animate-pulse">
+                </div>
+                <p class="text-lg text-gray-800/90 leading-relaxed max-w-3xl mx-auto animate-fade-in-up duration-700">
+                    En Tijuana Innovadora hemos desarrollado distintas <span class="font-semibold text-primary">esferas
+                        de acción</span> que representan las áreas clave donde impulsamos el talento, la creatividad y
+                    el compromiso social.<br>
+                    <span class="inline-block mt-2 text-accent font-semibold animate-wiggle">#InnovaciónParaTodos</span>
+                </p>
+                <p
+                    class="text-lg text-gray-700 mt-6 leading-relaxed max-w-2xl mx-auto animate-fade-in-up duration-1000 delay-200">
+                    Desde el arte, la ciencia y la moda hasta el liderazgo y el medio ambiente, cada esfera es un motor
+                    de transformación en nuestra comunidad.<br>
+                    <span class="block mt-4">Conócelas y descubre cómo estamos generando un impacto positivo en la
+                        región... <span class="text-accent font-semibold">¡y cómo tú también puedes ser parte de este
+                            movimiento!</span></span>
+                </p>
+                <!-- Call-to-action animado -->
+                <a href="#esferas"
+                    class="mt-10 inline-flex items-center gap-2 px-8 py-3 rounded-full bg-primary/90 hover:bg-primary text-white font-bold shadow-xl hover:shadow-2xl transition-all duration-300 scale-100 hover:scale-105 ring-2 ring-highlight focus:ring-4 focus:ring-accent/30 animate-bounce-slow"
+                    data-aos="zoom-in" data-aos-delay="600">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    Descubre las Esferas
+                </a>
+            </div>
+
+            <!-- Tarjetas de Esferas -->
+            <div class="relative z-10 max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-4 py-12 text-center">
+                <!-- Ejemplo de tarjeta de esfera: replica este bloque para cada esfera -->
+                <div class="bg-white/90 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 group animate-fade-in-up"
+                    data-aos="fade-right">
+                    <img src="./src/assets/logos-organización/Arte-Industria/ESFERAS-01.png" alt="Arte en la industria"
+                        class="mx-auto mt-6 mb-4 w-20 h-20 rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:rotate-1">
+                    <h3 class="text-xl font-semibold text-[#005DAA] mb-2">Arte en la Industria</h3>
+                    <p class="text-gray-600 mb-6 px-4">Explora cómo el arte se fusiona con la innovación para
+                        transformar espacios productivos y enriquecer la cultura local.</p>
+                </div>
+                <div class="bg-white/90 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 group animate-fade-in-up"
+                    data-aos="fade-up">
+                    <img src="./src/assets/logos-organización/Casa-Ideas/Logo_CasadelasIdeas-4.png"
+                        alt="Casa de las Ideas"
+                        class="mx-auto mt-6 mb-4 w-20 h-20 rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:rotate-1">
                     <h3 class="text-xl font-semibold text-[#005DAA] mb-2">Casa de las Ideas</h3>
-                    <p class="text-gray-600">Encuentros que inspiran y conectan a la sociedad tijuanense.</p>
+                    <p class="text-gray-600 mb-6 px-4">Un espacio para impulsar la creatividad y el pensamiento
+                        innovador en jóvenes y comunidades.</p>
                 </div>
-                <div>
-                    <img src="./src/assets/logos-organización/InnovaModa/ESFERAS-02.png"
-                        alt="Participa" class="mx-auto mb-4 w-20 h-20">
+                <div class="bg-white/90 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 group animate-fade-in-up"
+                    data-aos="fade-left">
+                    <img src="./src/assets/logos-organización/InnovaModa/ESFERAS-02.png" alt="InnovaModa"
+                        class="mx-auto mt-6 mb-4 w-20 h-20 rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:rotate-1">
                     <h3 class="text-xl font-semibold text-[#005DAA] mb-2">InnovaModa</h3>
-                    <p class="text-gray-600">Involúcrate con nuestras actividades y forma parte del cambio.</p>
+                    <p class="text-gray-600 mb-6 px-4">Moda y creatividad que proyectan el talento tijuanense a nivel
+                        nacional e internacional.</p>
                 </div>
             </div>
 
-            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
-                <div>
-                    <img src="./src/assets/logos-organización/Lideres/Lideres-04.png" alt="Esferas"
-                        class="mx-auto mb-4 w-20 h-20">
-                    <h3 class="text-xl font-semibold text-[#005DAA] mb-2">Lideres</h3>
-                    <p class="text-gray-600">Áreas clave que promueven el bienestar e innovación en la comunidad.</p>
+            <div class="relative z-10 max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-4 pb-12 text-center">
+                <div class="bg-white/90 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 group animate-fade-in-up"
+                    data-aos="fade-right">
+                    <img src="./src/assets/logos-organización/Lideres/Lideres-04.png" alt="Líderes"
+                        class="mx-auto mt-6 mb-4 w-20 h-20 rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:rotate-1">
+                    <h3 class="text-xl font-semibold text-[#005DAA] mb-2">Líderes</h3>
+                    <p class="text-gray-600 mb-6 px-4">Formación y reconocimiento de líderes que generan un cambio
+                        positivo en la región.</p>
                 </div>
-                <div>
-                    <img src="./src/assets/logos-organización/Paseo-Fama/paseo.png" alt="Eventos"
-                        class="mx-auto mb-4 w-20 h-20">
+                <div class="bg-white/90 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 group animate-fade-in-up"
+                    data-aos="fade-up">
+                    <img src="./src/assets/logos-organización/Paseo-Fama/paseo.png" alt="Paseo de la Fama"
+                        class="mx-auto mt-6 mb-4 w-20 h-20 rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:rotate-1">
                     <h3 class="text-xl font-semibold text-[#005DAA] mb-2">Paseo de la Fama</h3>
-                    <p class="text-gray-600">Encuentros que inspiran y conectan a la sociedad tijuanense.</p>
+                    <p class="text-gray-600 mb-6 px-4">Celebramos a quienes han dejado huella y puesto en alto el nombre
+                        de Tijuana.</p>
                 </div>
-                <div>
-                    <img src="./src/assets/logos-organización/Sinfonica-Juvenil/ESFERAS-05.png" alt="Participa"
-                        class="mx-auto mb-4 w-20 h-20">
+                <div class="bg-white/90 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 group animate-fade-in-up"
+                    data-aos="fade-left">
+                    <img src="./src/assets/logos-organización/Sinfonica-Juvenil/ESFERAS-05.png" alt="Sinfonica Juvenil"
+                        class="mx-auto mt-6 mb-4 w-20 h-20 rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:rotate-1">
                     <h3 class="text-xl font-semibold text-[#005DAA] mb-2">Sinfonica Juvenil</h3>
-                    <p class="text-gray-600">Involúcrate con nuestras actividades y forma parte del cambio.</p>
+                    <p class="text-gray-600 mb-6 px-4">Fomentamos el talento musical de jóvenes con impacto social y
+                        cultural.</p>
                 </div>
             </div>
 
-            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
-                <div>
-                    <img src="./src/assets/logos-organización/Tijuana-Verde/ESFERAS-04.png" alt="Esferas" class="mx-auto mb-4 w-20 h-20">
+            <div class="relative z-10 max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-4 pb-8 text-center">
+                <div class="bg-white/90 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 group animate-fade-in-up"
+                    data-aos="fade-right">
+                    <img src="./src/assets/logos-organización/Tijuana-Verde/ESFERAS-04.png" alt="Tijuana Verde"
+                        class="mx-auto mt-6 mb-4 w-20 h-20 rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:rotate-1">
                     <h3 class="text-xl font-semibold text-[#005DAA] mb-2">Tijuana Verde</h3>
-                    <p class="text-gray-600">Áreas clave que promueven el bienestar e innovación en la comunidad.</p>
+                    <p class="text-gray-600 mb-6 px-4">Impulsamos la conciencia y acción ecológica para un desarrollo
+                        sustentable.</p>
                 </div>
-                <div>
-                    <img src="./src/assets/logos-organización/INTERIOR_ AGOSTO-08.png" alt="Eventos"
-                        class="mx-auto mb-4 w-20 h-20">
+                <div class="bg-white/90 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 group animate-fade-in-up"
+                    data-aos="fade-up">
+                    <img src="./src/assets/logos-organización/INTERIOR_ AGOSTO-08.png" alt="FABLAB"
+                        class="mx-auto mt-6 mb-4 w-20 h-20 rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:rotate-1">
                     <h3 class="text-xl font-semibold text-[#005DAA] mb-2">FABLAB</h3>
-                    <p class="text-gray-600">Encuentros que inspiran y conectan a la sociedad tijuanense.</p>
+                    <p class="text-gray-600 mb-6 px-4">Laboratorio de innovación y tecnología para la creación de
+                        prototipos e ideas.</p>
                 </div>
-                <div>
-                    <img src="./src/assets/logos-organización/INTERIOR_ AGOSTO-08.png" alt="Participa"
-                        class="mx-auto mb-4 w-20 h-20">
+                <div class="bg-white/90 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 group animate-fade-in-up"
+                    data-aos="fade-left">
+                    <img src="./src/assets/logos-organización/INTERIOR_ AGOSTO-08.png" alt="Comunidad Creativa"
+                        class="mx-auto mt-6 mb-4 w-20 h-20 rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:rotate-1">
                     <h3 class="text-xl font-semibold text-[#005DAA] mb-2">Comunidad Creativa</h3>
-                    <p class="text-gray-600">Involúcrate con nuestras actividades y forma parte del cambio.</p>
+                    <p class="text-gray-600 mb-6 px-4">Colaboración multidisciplinaria para detonar ideas y proyectos
+                        sociales.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Esferas -->
-        <section class="bg-[#F4F4F4] py-12">
+        <!-- Esferas Impacto-->
+        <section class="bg-primary py-12">
             <div class="max-w-7xl mx-auto px-4">
-                <h3 class="text-2xl font-bold text-[#005DAA] mb-8 text-center">Nuestras Esferas de Impacto</h3>
+                <h3 class="text-2xl font-bold text-white mb-8 text-center">Nuestras Esferas de Impacto</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="bg-white p-6 shadow rounded">
                         <img src="./src/assets/images/InicioBanner.webp" alt="Esfera 1" class="mb-4 rounded">
