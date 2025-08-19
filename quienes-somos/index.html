@@ -202,6 +202,10 @@
                 }
             }
         }
+
+        .timeline-year {
+            @apply px-5 py-2 rounded-full bg-white text-[#005DAA] border border-[#C49E4F]/40 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110 ring-1 ring-[#005DAA]/20 hover:bg-[#C49E4F]/20 focus:ring-2 focus:ring-[#C49E4F];
+        }
     </style>
 
 
@@ -227,10 +231,10 @@
                             class="h-16 md:h-20 drop-shadow-xl animate-fade-in-up" />
                     </div>
                     <ul class="hidden md:flex gap-6 text-base font-semibold tracking-wide">
-                        <li><a href="/"
-                                class="hover:text-highlight transition duration-200 "
+                        <li><a href="/" class="hover:text-highlight transition duration-200 "
                                 aria-current="page">Inicio</a></li>
-                        <li><a href="/quienes-somos" class="hover:text-highlight transition duration-200 aria-[current=page]:text-highlight">Quiénes
+                        <li><a href="/quienes-somos"
+                                class="hover:text-highlight transition duration-200 aria-[current=page]:text-highlight">Quiénes
                                 Somos</a></li>
                         <li class="relative group">
                             <button class="inline-flex items-center hover:text-highlight focus:outline-none"
@@ -335,6 +339,230 @@
 
         </section>
 
+        <!--QUIENES SOMOS-->
+        <section
+            class="relative py-24 bg-gradient-to-bl from-[#F4F4F4] via-[#ECF3F9] to-[#F7EFE2] overflow-hidden z-10">
+
+            <!-- Glow decorativo -->
+            <div
+                class="absolute -top-20 right-0 w-[30vw] h-[30vw] bg-gradient-to-tr from-[#C49E4F]/20 via-[#005DAA]/10 to-transparent blur-3xl rounded-full opacity-60 pointer-events-none z-0">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10 space-y-20">
+
+                <!-- Encabezado -->
+                <div class="text-center">
+                    <h2
+                        class="text-4xl font-extrabold bg-gradient-to-r from-[#005DAA] via-[#C49E4F] to-[#005DAA] bg-clip-text text-transparent animate-gradient-x">
+                        ¿Quiénes Somos?
+                    </h2>
+                    <div
+                        class="w-20 h-1 mx-auto mt-3 bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] rounded-full animate-pulse">
+                    </div>
+                </div>
+
+                <!-- Historia -->
+                <div
+                    class="bg-white/90 rounded-3xl shadow-xl p-8 md:p-12 text-gray-800 text-lg leading-relaxed max-w-5xl mx-auto animate-fade-in-up">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Historia</h3>
+                    <p class="mb-4">
+                        <strong>Tijuana Innovadora A.C.</strong> nace del impulso de la comunidad en 2010, la sinergia
+                        para coordinar un evento que mostrara las fortalezas de la ciudad, el cual se transformó en un
+                        esfuerzo colectivo que abrió un sinfín de oportunidades y propuestas comunitarias para promover
+                        las virtudes de la ciudad, sus talentos, vocaciones y pasiones.
+                    </p>
+                    <p>
+                        Con una constancia sin precedentes, el movimiento es hoy un detonante de iniciativas en la
+                        región, una plataforma ciudadana que integra propuestas creativas para la innovación social
+                        (innovación creativa) para elevar la calidad de vida de los tijuanenses.
+                    </p>
+                </div>
+
+                <!-- Grid Misión & Visión -->
+                <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+
+                    <!-- Misión -->
+                    <div
+                        class="bg-gradient-to-br from-[#005DAA]/10 via-white to-[#C49E4F]/10 backdrop-blur-md border border-primary/10 p-8 rounded-2xl shadow-lg transition hover:-translate-y-1 hover:shadow-2xl duration-300 animate-fade-in-up">
+                        <div class="mb-4">
+                            <i class="fa-solid fa-bullseye text-3xl text-[#005DAA]"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Misión</h3>
+                        <p class="text-gray-700 text-base">
+                            Impulsar el desarrollo de la ciudadanía a través de propuestas innovadoras con impacto
+                            social, promoviendo las buenas acciones y el sentido de pertenencia integrando a la sociedad
+                            en colaboración de los distintos actores sociales, en un esfuerzo colectivo que contribuya a
+                            mejorar la calidad de vida de los tijuanenses.
+                        </p>
+                    </div>
+
+                    <!-- Visión -->
+                    <div
+                        class="bg-gradient-to-br from-[#C49E4F]/10 via-white to-[#005DAA]/10 backdrop-blur-md border border-accent/10 p-8 rounded-2xl shadow-lg transition hover:-translate-y-1 hover:shadow-2xl duration-300 animate-fade-in-up delay-150">
+                        <div class="mb-4">
+                            <i class="fa-solid fa-eye text-3xl text-[#C49E4F]"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-accent mb-2">Visión</h3>
+                        <p class="text-gray-700 text-base">
+                            Ser un espacio para la ciudadanía donde pueda intercambiar ideas, propuestas y proyectos que
+                            generen conciencia social y acción continua, trabajando con los distintos actores sociales
+                            en una estructura profesional, creíble y efectiva, creando así un movimiento permanente de
+                            mejora social.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-[#f9fafb] relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2
+                    class="text-4xl md:text-5xl font-extrabold text-center mb-16 bg-gradient-to-r from-[#005DAA] via-[#C49E4F] to-[#005DAA] bg-clip-text text-transparent animate-gradient-x">
+                    Línea del Tiempo
+                </h2>
+
+                <!-- Línea base con flecha -->
+                <div class="relative w-full h-28">
+                    <!-- Línea horizontal -->
+                    <div
+                        class="absolute top-1/2 left-0 right-0 h-2 bg-gradient-to-r from-[#005DAA] via-[#C49E4F] to-[#005DAA] rounded-full">
+                    </div>
+
+                    <!-- Flecha final -->
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2">
+                        <div class="w-5 h-5 rotate-45 bg-[#005DAA]"></div>
+                    </div>
+
+                    <!-- Años con puntos -->
+                    <div class="flex justify-between items-center relative z-10 px-4">
+                        <!-- Cada año -->
+                        <div class="group relative text-center cursor-pointer" onclick="changeGallery(2010)">
+                            <div
+                                class="w-6 h-6 bg-[#005DAA] rounded-full mx-auto group-hover:scale-125 transition duration-300 shadow-md">
+                            </div>
+                            <p class="mt-2 text-sm font-semibold text-gray-700 group-hover:text-primary">2010</p>
+                        </div>
+                        <div class="group relative text-center cursor-pointer" onclick="changeGallery(2012)">
+                            <div
+                                class="w-6 h-6 bg-[#005DAA] rounded-full mx-auto group-hover:scale-125 transition duration-300 shadow-md">
+                            </div>
+                            <p class="mt-2 text-sm font-semibold text-gray-700 group-hover:text-primary">2012</p>
+                        </div>
+                        <div class="group relative text-center cursor-pointer" onclick="changeGallery(2015)">
+                            <div
+                                class="w-6 h-6 bg-[#005DAA] rounded-full mx-auto group-hover:scale-125 transition duration-300 shadow-md">
+                            </div>
+                            <p class="mt-2 text-sm font-semibold text-gray-700 group-hover:text-primary">2015</p>
+                        </div>
+                        <div class="group relative text-center cursor-pointer" onclick="changeGallery(2018)">
+                            <div
+                                class="w-6 h-6 bg-[#C49E4F] rounded-full mx-auto group-hover:scale-125 transition duration-300 shadow-md">
+                            </div>
+                            <p class="mt-2 text-sm font-semibold text-gray-700 group-hover:text-accent">2018</p>
+                        </div>
+                        <div class="group relative text-center cursor-pointer" onclick="changeGallery(2020)">
+                            <div
+                                class="w-6 h-6 bg-[#005DAA] rounded-full mx-auto group-hover:scale-125 transition duration-300 shadow-md">
+                            </div>
+                            <p class="mt-2 text-sm font-semibold text-gray-700 group-hover:text-primary">2020</p>
+                        </div>
+                        <div class="group relative text-center cursor-pointer" onclick="changeGallery(2022)">
+                            <div
+                                class="w-6 h-6 bg-[#C49E4F] rounded-full mx-auto group-hover:scale-125 transition duration-300 shadow-md">
+                            </div>
+                            <p class="mt-2 text-sm font-semibold text-gray-700 group-hover:text-accent">2022</p>
+                        </div>
+                        <div class="group relative text-center cursor-pointer" onclick="changeGallery(2025)">
+                            <div
+                                class="w-6 h-6 bg-[#005DAA] rounded-full mx-auto group-hover:scale-125 transition duration-300 shadow-md">
+                            </div>
+                            <p class="mt-2 text-sm font-semibold text-gray-700 group-hover:text-primary">2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Galería dinámica -->
+                <div class="mt-16 transition-opacity duration-500" id="timeline-gallery">
+                    <div class="swiper mySwiper w-full max-w-4xl mx-auto">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../src/assets/images/Ken Kannappan (2).JPG" alt="2010 Foto 1"
+                                    class="rounded-xl shadow-xl object-cover w-full max-h-[500px]" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../src/assets/images/Julie Shimer (1).JPG" alt="2010 Foto 2"
+                                    class="rounded-xl shadow-xl object-cover w-full max-h-[500px]" />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination mt-4"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <script>
+            function changeGallery(year) {
+                const gallery = document.getElementById("timeline-gallery");
+                gallery.style.opacity = 0;
+                setTimeout(() => {
+                    gallery.innerHTML = `
+        <img src="../src/assets/images/${year}.webp" alt="Foto de ${year}" class="rounded-xl shadow-xl w-full max-h-[500px] object-cover mx-auto">
+      `;
+                    gallery.style.opacity = 1;
+                }, 300);
+            }
+        </script>
+
+        <script>
+            let swiper;
+
+            function changeGallery(year) {
+                const gallery = document.getElementById("timeline-gallery");
+                gallery.style.opacity = 0;
+
+                setTimeout(() => {
+                    gallery.innerHTML = `
+        <div class="swiper mySwiper w-full max-w-4xl mx-auto">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../src/assets/images/${year}.webp" class="rounded-xl shadow-xl object-cover w-full max-h-[500px]"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../src/assets/images/${year}.webp" class="rounded-xl shadow-xl object-cover w-full max-h-[500px]"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../src/assets/images/${year}.webp" class="rounded-xl shadow-xl object-cover w-full max-h-[500px]"/>
+            </div>
+          </div>
+          <div class="swiper-pagination mt-4"></div>
+        </div>
+      `;
+
+                    // Reinit swiper
+                    setTimeout(() => {
+                        swiper = new Swiper(".mySwiper", {
+                            loop: true,
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                            },
+                            autoplay: {
+                                delay: 4000,
+                                disableOnInteraction: false,
+                            },
+                        });
+                        gallery.style.opacity = 1;
+                    }, 50);
+                }, 300);
+            }
+
+            // Inicializar el primer año
+            window.onload = () => changeGallery(2010);
+        </script>
+
+
         <!-- SECCIÓN: INNOVACIÓN EN CONSTANTE MOVIMIENTO (ESTILO REVISTA MODERNA) -->
         <section class="relative overflow-hidden py-24 bg-gradient-to-br from-[#F4F4F4]   via-[#F9FAFB] to-[#E5E7EB]">
 
@@ -380,7 +608,8 @@
                 <!-- Imagen editorial izquierda (simula portada de revista, puedes cambiarla por otra relevante) -->
                 <div class="col-span-2 flex items-center justify-center md:justify-end">
                     <div class="relative group">
-                        <img src="./src/assets/images/Julie Shimer (1).JPG" alt="Tijuana Innovadora editorial"
+                        <img src="../src/assets/logos-organización/INTERIOR_ AGOSTO-08.png"
+                            alt="Tijuana Innovadora editorial"
                             class="rounded-3xl shadow-2xl border-4 border-white/80 group-hover:scale-105 group-hover:-rotate-1 transition duration-500 ease-in-out w-full max-w-xx md:max-w-none object-cover aspect-[4/5] animate-fade-in-up" />
                         <!-- Sello/acento tipo portada -->
                         <!-- <span
@@ -392,7 +621,7 @@
                 <div class="col-span-3 flex flex-col items-start justify-center text-left">
                     <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] bg-clip-text text-transparent animate-gradient-x drop-shadow-lg shadow-accent"
                         data-aos="fade-right">
-                        INNOVACIÓN EN <span class="text-accent">CONSTANTE MOVIMIENTO</span>
+                        UN MOVIMIENTO QUE CRECE <span class="text-accent"> Y SE TRANSFORMA</span>
                     </h2>
                     <p class="text-xl text-gray-700/90 leading-relaxed mb-6 animate-fade-in-up" data-aos="fade-up"
                         data-aos-delay="200">
@@ -405,13 +634,14 @@
                         class="w-24 h-1 rounded-full bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] animate-pulse mb-8">
                     </div>
                     <!-- CTA animado -->
-                     <a href="#esferas"
+                    <!-- <a href="#esferas"
                         class="px-8 py-4 bg-primary text-white rounded-full font-bold text-lg shadow-lg hover:bg-[#01355a] transition scale-100 hover:scale-105 animate-bounce-slow ring-2 ring-accent focus:ring-4 focus:ring-accent/40">
                           <i class="fa-solid fa-arrow-down"></i> Explora nuestras esferas
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </section>
+
 
         <!-- SECCIÓN BIENVENIDA TIJUANA INNOVADORA CON VIDEO (Estilo revista, moderna y dinámica)-->
         <section
@@ -452,9 +682,9 @@
                             real y duradero.</span>
                     </p>
                     <!-- CTA animado -->
-                     <a href="#esferas"
+                    <a href="#esferas"
                         class="px-8 py-4 bg-primary text-white rounded-full font-bold text-lg shadow-lg hover:bg-[#01355a] transition scale-100 hover:scale-105 animate-bounce-slow ring-2 ring-accent focus:ring-4 focus:ring-accent/40">
-                          <i class="fa-solid fa-arrow-down"></i> Descubre nuestras esferas
+                        <i class="fa-solid fa-arrow-down"></i> Descubre nuestras esferas
                     </a>
                 </div>
 
@@ -1078,92 +1308,6 @@
             </div>
         </section>
 
-        <!-- Participa - Sección Voluntariado Creativa y Diferente -->
-        <section class="py-28 bg-gradient-to-bl from-[#F4F4F4] via-[#ECF3F9] to-[#F7EFE2] relative overflow-hidden">
-            <div
-                class="absolute right-0 top-1/3 w-[28vw] h-[28vw] bg-gradient-to-tr from-[#C49E4F]/20 via-[#005DAA]/10 to-transparent blur-3xl rounded-full opacity-60 pointer-events-none z-0">
-            </div>
-
-            <div class="max-w-7xl mx-auto px-6 relative z-10">
-                <h3
-                    class="text-center text-4xl md:text-5xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-[#005DAA] via-[#C49E4F] to-[#005DAA] bg-clip-text text-transparent animate-gradient-x drop-shadow-xl">
-                    <i class="fa-solid fa-handshake-angle mr-2"></i> ¿Cómo puedes participar en Tijuana Innovadora?
-                </h3>
-
-                <p class="text-xl text-center text-gray-800/90 max-w-3xl mx-auto mb-16 animate-fade-in-up">
-                    Sé parte del cambio. Hay muchas formas de sumarte a este gran movimiento ciudadano. Participa desde
-                    donde estés, como puedas y con lo que mejor sabes hacer.
-                </p>
-
-                <div class="grid md:grid-cols-3 gap-10 items-start">
-                    <!-- Donante -->
-                    <div
-                        class="bg-white/90 rounded-2xl shadow-xl border border-accent/10 group hover:-translate-y-2 transition-all duration-300 animate-fade-left p-6 flex flex-col items-center text-center">
-                        <i class="fa-solid fa-hand-holding-dollar text-4xl text-[#C49E4F] mb-4 animate-bounce-slow"></i>
-                        <h4 class="font-bold text-lg mb-1 text-accent">Donante</h4>
-                        <p class="text-gray-600 text-base">Apoya económicamente los proyectos sociales y culturales de
-                            Tijuana Innovadora. Tu aportación tiene un gran impacto.</p>
-                    </div>
-
-                    <!-- Aliado -->
-                    <div
-                        class="bg-white/90 rounded-2xl shadow-xl border border-primary/10 group hover:-translate-y-2 transition-all duration-300 animate-fade-up p-6 flex flex-col items-center text-center">
-                        <i class="fa-solid fa-people-arrows text-4xl text-[#005DAA] mb-4 animate-bounce-slow"></i>
-                        <h4 class="font-bold text-lg mb-1 text-primary">Aliado</h4>
-                        <p class="text-gray-600 text-base">Colabora como institución, empresa u organización en
-                            programas y acciones conjuntas de alto impacto comunitario.</p>
-                    </div>
-
-                    <!-- Patrocinador -->
-                    <div
-                        class="bg-white/90 rounded-2xl shadow-xl border border-accent/10 group hover:-translate-y-2 transition-all duration-300 animate-fade-right p-6 flex flex-col items-center text-center">
-                        <i class="fa-solid fa-bullhorn text-4xl text-[#C49E4F] mb-4 animate-bounce-slow"></i>
-                        <h4 class="font-bold text-lg mb-1 text-accent">Patrocinador</h4>
-                        <p class="text-gray-600 text-base">Impulsa eventos, ferias o campañas de Tijuana Innovadora con
-                            tu marca y presencia estratégica.</p>
-                    </div>
-
-                    <!-- Voluntario -->
-                    <div
-                        class="bg-white/90 rounded-2xl shadow-xl border border-primary/10 group hover:-translate-y-2 transition-all duration-300 animate-fade-left delay-100 p-6 flex flex-col items-center text-center">
-                        <i class="fa-solid fa-user-plus text-4xl text-[#005DAA] mb-4 animate-bounce-slow"></i>
-                        <h4 class="font-bold text-lg mb-1 text-primary">Voluntario</h4>
-                        <p class="text-gray-600 text-base">Únete a brigadas, actividades comunitarias y acciones de
-                            cambio directo. ¡Tus manos transforman!</p>
-                    </div>
-
-                    <!-- Servicio social -->
-                    <div
-                        class="bg-white/90 rounded-2xl shadow-xl border border-accent/10 group hover:-translate-y-2 transition-all duration-300 animate-fade-up delay-150 p-6 flex flex-col items-center text-center">
-                        <i class="fa-solid fa-graduation-cap text-4xl text-[#C49E4F] mb-4 animate-bounce-slow"></i>
-                        <h4 class="font-bold text-lg mb-1 text-accent">Servicio Social</h4>
-                        <p class="text-gray-600 text-base">Cumple tu servicio social en proyectos reales que generan
-                            transformación social y profesionalismo.</p>
-                    </div>
-
-                    <!-- Practicante -->
-                    <div
-                        class="bg-white/90 rounded-2xl shadow-xl border border-primary/10 group hover:-translate-y-2 transition-all duration-300 animate-fade-right delay-200 p-6 flex flex-col items-center text-center">
-                        <i class="fa-solid fa-laptop-code text-4xl text-[#005DAA] mb-4 animate-bounce-slow"></i>
-                        <h4 class="font-bold text-lg mb-1 text-primary">Practicante</h4>
-                        <p class="text-gray-600 text-base">Aplica tus conocimientos universitarios en áreas como diseño,
-                            comunicación, TI, administración, producción y más.</p>
-                    </div>
-                </div>
-
-                <!-- CTA -->
-                <div class="mt-16 flex flex-wrap justify-center gap-6">
-                    <a href="./participa/index.html"
-                        class="px-8 py-4 bg-primary text-white rounded-full font-bold text-lg shadow-lg hover:bg-[#01355a] transition scale-100 hover:scale-105 animate-bounce-slow ring-2 ring-accent focus:ring-4 focus:ring-accent/40">
-                        <i class="fa-solid fa-user-plus mr-2"></i> Quiero participar
-                    </a>
-                    <a href="mailto:info@tijuanainnovadora.com?subject=Quiero%20participar"
-                        class="px-8 py-4 bg-[#C49E4F] text-white rounded-full font-bold text-lg shadow-lg hover:bg-[#b4883c] transition scale-100 hover:scale-105 ring-2 ring-primary">
-                        <i class="fa-solid fa-envelope mr-2"></i> Escríbenos
-                    </a>
-                </div>
-            </div>
-        </section>
 
         <!-- Donaciones - Estilo moderno, visualmente cálida y emotiva -->
         <section class="py-28 bg-gradient-to-tr from-[#F4F4F4] via-[#f7f6ef] to-[#e6e9f3] relative overflow-hidden">
@@ -1175,8 +1319,9 @@
             <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
                 <!-- Columna de imagen motivacional -->
                 <div class="animate-fade-in-left flex justify-center">
-                    <img src="./src/assets/images/Julie Shimer (1).JPG" alt="Apoya Tijuana Innovadora"
-                        class="rounded-3xl shadow-xl w-full max-w-md hover:scale-105 transition-transform duration-500" data-aos="fade-right" />
+                    <img src="../src/assets/images/Julie Shimer (1).JPG" alt="Apoya Tijuana Innovadora"
+                        class="rounded-3xl shadow-xl w-full max-w-md hover:scale-105 transition-transform duration-500"
+                        data-aos="fade-right" />
                 </div>
 
                 <!-- Columna de contenido -->
@@ -1191,7 +1336,7 @@
 
                     <!-- Título -->
                     <h3
-                        class="text-3xl md:text-4xl font-extrabold mb-4 bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] bg-clip-text text-transparent animate-gradient-x drop-shadow-lg" >
+                        class="text-3xl md:text-4xl font-extrabold mb-4 bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] bg-clip-text text-transparent animate-gradient-x drop-shadow-lg">
                         Apoya nuestra misión
                     </h3>
 
@@ -1248,38 +1393,38 @@
                         <!-- Slide 1 -->
                         <div
                             class="swiper-slide flex justify-center items-center grayscale hover:grayscale-0 transition duration-500">
-                            <img src="./src/assets/logos-organización/FeriaAmbiental_Logo-01.png" alt="Patrocinador 1"
+                            <img src="../src/assets/logos-organización/FeriaAmbiental_Logo-01.png" alt="Patrocinador 1"
                                 class="w-32 h-32 object-contain" />
                         </div>
                         <!-- Slide 2 -->
                         <div
                             class="swiper-slide flex justify-center items-center grayscale hover:grayscale-0 transition duration-500">
-                            <img src="./src/assets/logos-organización/DanSer-01.png" alt="Patrocinador 2"
+                            <img src="../src/assets/logos-organización/DanSer-01.png" alt="Patrocinador 2"
                                 class="w-32 h-32 object-contain" />
                         </div>
                         <!-- Slide 3 -->
                         <div
                             class="swiper-slide flex justify-center items-center grayscale hover:grayscale-0 transition duration-500">
-                            <img src="./src/assets/logos-organización/Logo Crece LEuye-16.png" alt="Patrocinador 3"
+                            <img src="../src/assets/logos-organización/Logo Crece LEuye-16.png" alt="Patrocinador 3"
                                 class="w-32 h-32 object-contain" />
                         </div>
                         <!-- Agrega más slides aquí -->
                         <!-- Slide 1 -->
                         <div
                             class="swiper-slide flex justify-center items-center grayscale hover:grayscale-0 transition duration-500">
-                            <img src="./src/assets/logos-organización/SJT Logo Transp PNG 2015.png"
+                            <img src="../src/assets/logos-organización/SJT Logo Transp PNG 2015.png"
                                 alt="Patrocinador 1" class="w-32 h-32 object-contain" />
                         </div>
                         <!-- Slide 2 -->
                         <div
                             class="swiper-slide flex justify-center items-center grayscale hover:grayscale-0 transition duration-500">
-                            <img src="./src/assets/logos-organización/RioTijuana-04.png" alt="Patrocinador 2"
+                            <img src="../src/assets/logos-organización/RioTijuana-04.png" alt="Patrocinador 2"
                                 class="w-32 h-32 object-contain" />
                         </div>
                         <!-- Slide 3 -->
                         <div
                             class="swiper-slide flex justify-center items-center grayscale hover:grayscale-0 transition duration-500">
-                            <img src="./src/assets/logos-organización/Pasajero 29.png" alt="Patrocinador 3"
+                            <img src="../src/assets/logos-organización/Pasajero 29.png" alt="Patrocinador 3"
                                 class="w-32 h-32 object-contain" />
                         </div>
                     </div>
@@ -1321,7 +1466,7 @@
 
                     <!-- Logo & Claim modernizado -->
                     <div class="flex flex-col items-center text-center max-w-xs w-full mx-auto animate-fade-in-up">
-                        <img src="./src/assets/logos-organización/Logo TI.png"
+                        <img src="../src/assets/logos-organización/Logo TI.png"
                             class="h-20 mb-3 drop-shadow-2xl hover:scale-105 transition duration-300"
                             alt="Tijuana Innovadora logo">
                         <p class="text-base leading-relaxed mt-2 font-medium text-white/90">
@@ -1497,6 +1642,8 @@
                 });
             });
         </script>
+
+
 
         <!-- Modal Pop-up -->
         <div id="cta-modal"
