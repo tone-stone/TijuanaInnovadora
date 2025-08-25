@@ -12,6 +12,8 @@
     <meta name="author" content="Tijuana Innovadora" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.tijuanainnovadora.com/" />
+ 
+
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -81,7 +83,7 @@
     <link rel="stylesheet" href="./src/styles/layout.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./src/assets/logos-organización/Cabeza TI.png">
+    <link rel="icon" type="image/png" href="./src/assets/logos-organización/CabezaTI.png">
 
     <!-- Datos estructurados para Google (JSON-LD) -->
     <script type="application/ld+json">
@@ -100,112 +102,7 @@
     }
     </script>
 
-    <style>
-        /* Animación para el SVG de olas */
-        @keyframes svgloop {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .animate-svgloop {
-            animation: svgloop 18s linear infinite;
-        }
-
-        /* Gradiente animado (para texto, etc) */
-        @keyframes animate-gradient-x {
-
-            0%,
-            100% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-        }
-
-        .animate-gradient-x {
-            background-size: 200% 200%;
-            animation: animate-gradient-x 5s ease-in-out infinite;
-        }
-
-        /* Fade-in hacia arriba */
-        @keyframes fade-in-up {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .animate-fade-in-up {
-            animation: fade-in-up 1.2s cubic-bezier(.5, 0, .5, 1) both;
-        }
-
-        /* Rebote lento (botones) */
-        @keyframes bounce-slow {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .animate-bounce-slow {
-            animation: bounce-slow 2.4s infinite;
-        }
-
-        /* Wiggle (temblor breve, por ejemplo hashtags o decorativos) */
-        @keyframes wiggle {
-
-            0%,
-            100% {
-                transform: rotate(-2deg);
-            }
-
-            50% {
-                transform: rotate(2deg);
-            }
-        }
-
-        .animate-wiggle {
-            animation: wiggle 0.35s 2;
-        }
-
-        @layer utilities {
-            .animate-float-slow {
-                animation: float-slow 6s ease-in-out infinite;
-            }
-
-            @keyframes float-slow {
-
-                0%,
-                100% {
-                    transform: translateY(0);
-                }
-
-                50% {
-                    transform: translateY(-10px);
-                }
-            }
-        }
-    </style>
-
-
-
+   
 </head>
 
 <body class="bg-white text-gray-900 font-sans">
@@ -380,7 +277,7 @@
                 <!-- Imagen editorial izquierda (simula portada de revista, puedes cambiarla por otra relevante) -->
                 <div class="col-span-2 flex items-center justify-center md:justify-end">
                     <div class="relative group">
-                        <img src="./src/assets/images/Julie Shimer (1).JPG" alt="Tijuana Innovadora editorial"
+                        <img src="./src/assets/images/DonJose.PNG" alt="Tijuana Innovadora editorial"
                             class="rounded-3xl shadow-2xl border-4 border-white/80 group-hover:scale-105 group-hover:-rotate-1 transition duration-500 ease-in-out w-full max-w-xx md:max-w-none object-cover aspect-[4/5] animate-fade-in-up" />
                         <!-- Sello/acento tipo portada -->
                         <!-- <span
@@ -832,7 +729,7 @@
                                 <p class="text-gray-700 text-base text-center mb-4">Reconocimos el talento local en
                                     robótica y nuevas tecnologías.</p>
                                 <a href="https://twitter.com/tijinnovadora" target="_blank" rel="noopener"
-                                    class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-accent/90 hover:bg-primary text-white font-bold shadow-lg transition-all duration-300 scale-100 hover:scale-105 animate-bounce-slow group-hover:ring-2 group-hover:ring-primary/30">
+                                    class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-primary/90 hover:bg-primary text-white font-bold shadow-lg transition-all duration-300 scale-100 hover:scale-105 animate-bounce-slow group-hover:ring-2 group-hover:ring-primary/30">
                                     <i class="fa-brands fa-x-twitter"></i>
                                     Ver en Twitter
                                 </a>

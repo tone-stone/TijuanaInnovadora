@@ -1,1 +1,186 @@
 /* Estilos globales */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  background-color: #F4F4F4;
+  scroll-behavior: smooth;
+  color: #232323;
+}
+
+:root {
+  --color-primary: #005DAA;
+  --color-accent: #C49E4F;
+  --color-dark: #09090f;
+  --color-bg: #F4F4F4;
+  --color-highlight: #f7efe2;
+  --font-main: 'Poppins', 'Inter', Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-main);
+  font-weight: bold;
+  line-height: 1.2;
+}
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.03em;
+}
+h2 {
+  font-size: 2rem;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover, a:focus {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* todas las imágenes tengan bordes redondeados y no se salgan de su contenedor */
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+
+.fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+::selection {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+
+
+
+  /* Animación para el SVG de olas */
+        @keyframes svgloop {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-svgloop {
+            animation: svgloop 18s linear infinite;
+        }
+
+        /* Gradiente animado (para texto, etc) */
+        @keyframes animate-gradient-x {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .animate-gradient-x {
+            background-size: 200% 200%;
+            animation: animate-gradient-x 5s ease-in-out infinite;
+        }
+
+        /* Fade-in hacia arriba */
+        @keyframes fade-in-up {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fade-in-up 1.2s cubic-bezier(.5, 0, .5, 1) both;
+        }
+
+        /* Rebote lento (botones) */
+        @keyframes bounce-slow {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animate-bounce-slow {
+            animation: bounce-slow 2.4s infinite;
+        }
+
+        /* Wiggle (temblor breve, por ejemplo hashtags o decorativos) */
+        @keyframes wiggle {
+
+            0%,
+            100% {
+                transform: rotate(-2deg);
+            }
+
+            50% {
+                transform: rotate(2deg);
+            }
+        }
+
+        .animate-wiggle {
+            animation: wiggle 0.35s 2;
+        }
+
+        @layer utilities {
+            .animate-float-slow {
+                animation: float-slow 6s ease-in-out infinite;
+            }
+
+            @keyframes float-slow {
+
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+        }
