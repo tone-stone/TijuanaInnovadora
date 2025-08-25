@@ -25,6 +25,15 @@ body {
   --color-bg: #F4F4F4;
   --color-highlight: #f7efe2;
   --font-main: 'Poppins', 'Inter', Arial, sans-serif;
+   --color-arte-industria: #CD545B;
+  --color-casa-ideas: #DC6B2F;
+  --color-innovamoda: #93328E;
+  --color-jovenes-lideres: #211551;
+  --color-paseo-fama: #FFC72C;
+  --color-sinfonica: #93272C;
+  --color-tijuana-verde: #C4D600;
+  --color-ti-azul: #01426A;
+  --color-ti-dorado: #9A7611;
 }
 
 h1, h2, h3, h4 {
