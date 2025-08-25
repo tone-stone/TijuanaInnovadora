@@ -2,89 +2,100 @@
 <html lang="es-MX">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tijuana Innovadora | Movimiento ciudadano por el arte, ciencia y tecnología</title>
-  <meta name="description"
-    content="Tijuana Innovadora es un movimiento ciudadano que promueve el arte, ciencia, tecnología, liderazgo y desarrollo sostenible en la región fronteriza de Tijuana." />
-  <meta name="keywords"
-    content="Tijuana, Innovadora, movimiento ciudadano, arte, ciencia, tecnología, liderazgo, proyectos sociales, esferas de influencia, cultura, desarrollo sostenible" />
-  <meta name="author" content="Tijuana Innovadora" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.tijuanainnovadora.com/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tijuana Innovadora | Movimiento ciudadano por el arte, ciencia y tecnología</title>
+    <meta name="description"
+        content="Tijuana Innovadora es un movimiento ciudadano que promueve el arte, ciencia, tecnología, liderazgo y desarrollo sostenible en la región fronteriza de Tijuana." />
+    <meta name="keywords"
+        content="Tijuana, Innovadora, movimiento ciudadano, arte, ciencia, tecnología, liderazgo, proyectos sociales, esferas de influencia, cultura, desarrollo sostenible" />
+    <meta name="author" content="Tijuana Innovadora" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.tijuanainnovadora.com/" />
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#01426A',
-            secondary: '#9A7611',
-            highlight: '#C49E4F',
-            dark: '#1A1A1A',
-            light: '#F4F4F4',
-          },
+
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#01426A',
+                        secondary: '#9A7611',
+                        highlight: '#C49E4F',
+                        dark: '#1A1A1A',
+                        light: '#F4F4F4',
+                        arteindustria: '#CD545B',
+                        casaideas: '#DC6B2F',
+                        innovamoda: '#93328E',
+                        joveneslideres: '#211551',
+                        paseofama: '#FFC72C',
+                        sinfonica: '#93272C',
+                        tijuanaverde: '#C4D600',
+                        tiazul: '#01426A',
+                        tidorado: '#9A7611',
+                    },
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Animate.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => AOS.init({ duration: 1200 }));
-  </script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => AOS.init({ duration: 1200 }));
+    </script>
 
-  <!-- SwiperJS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
-  <!-- Preconexión CDN -->
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link rel="preconnect" href="https://unpkg.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <!-- Preconexión CDN -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
 
-  <!-- Preload Hero -->
-  <link rel="preload" as="image" href="./src/assets/images/InicioBanner.webp"
-    imagesrcset="./src/assets/images/InicioBanner.webp" imagesizes="100vw">
+    <!-- Preload Hero -->
+    <link rel="preload" as="image" href="./src/assets/images/InicioBanner.webp"
+        imagesrcset="./src/assets/images/InicioBanner.webp" imagesizes="100vw">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Tijuana Innovadora | Movimiento ciudadano con impacto global">
-  <meta property="og:description"
-    content="Conoce las iniciativas de arte, ciencia, tecnología y liderazgo impulsadas por Tijuana Innovadora.">
-  <meta property="og:image" content="https://www.tijuanainnovadora.com/src/assets/images/og-cover.jpg">
-  <meta property="og:url" content="https://www.tijuanainnovadora.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_MX">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tijuana Innovadora | Movimiento ciudadano con impacto global">
+    <meta property="og:description"
+        content="Conoce las iniciativas de arte, ciencia, tecnología y liderazgo impulsadas por Tijuana Innovadora.">
+    <meta property="og:image" content="https://www.tijuanainnovadora.com/src/assets/images/og-cover.jpg">
+    <meta property="og:url" content="https://www.tijuanainnovadora.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Tijuana Innovadora">
-  <meta name="twitter:description" content="Movimiento ciudadano en Tijuana que impulsa el desarrollo regional.">
-  <meta name="twitter:image" content="https://www.tijuanainnovadora.com/src/assets/images/og-cover.jpg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tijuana Innovadora">
+    <meta name="twitter:description" content="Movimiento ciudadano en Tijuana que impulsa el desarrollo regional.">
+    <meta name="twitter:image" content="https://www.tijuanainnovadora.com/src/assets/images/og-cover.jpg">
 
-  <!-- Estilos personalizados -->
-  <link rel="stylesheet" href="./src/styles/global.css">
-  <link rel="stylesheet" href="./src/styles/fonts.css">
-  <link rel="stylesheet" href="./src/styles/layout.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/fonts.css">
+    <link rel="stylesheet" href="./src/styles/layout.css">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./src/assets/logos-organización/Cabeza TI.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./src/assets/logos-organización/CabezaTI.png">
 
-  <!-- Datos estructurados para Google (JSON-LD) -->
-  <script type="application/ld+json">
+    <!-- Datos estructurados para Google (JSON-LD) -->
+    <script type="application/ld+json">
     {
      "@context": "https://schema.org",
      "@type": "Organization",
@@ -99,115 +110,6 @@
         ]
     }
     </script>
-
-  <style>
-    /* Animación para el SVG de olas */
-    @keyframes svgloop {
-      0% {
-        transform: translateX(0);
-      }
-
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-
-    .animate-svgloop {
-      animation: svgloop 18s linear infinite;
-    }
-
-    /* Gradiente animado (para texto, etc) */
-    @keyframes animate-gradient-x {
-
-      0%,
-      100% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-    }
-
-    .animate-gradient-x {
-      background-size: 200% 200%;
-      animation: animate-gradient-x 5s ease-in-out infinite;
-    }
-
-    /* Fade-in hacia arriba */
-    @keyframes fade-in-up {
-      0% {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .animate-fade-in-up {
-      animation: fade-in-up 1.2s cubic-bezier(.5, 0, .5, 1) both;
-    }
-
-    /* Rebote lento (botones) */
-    @keyframes bounce-slow {
-
-      0%,
-      100% {
-        transform: translateY(0);
-      }
-
-      50% {
-        transform: translateY(-10px);
-      }
-    }
-
-    .animate-bounce-slow {
-      animation: bounce-slow 2.4s infinite;
-    }
-
-    /* Wiggle (temblor breve, por ejemplo hashtags o decorativos) */
-    @keyframes wiggle {
-
-      0%,
-      100% {
-        transform: rotate(-2deg);
-      }
-
-      50% {
-        transform: rotate(2deg);
-      }
-    }
-
-    .animate-wiggle {
-      animation: wiggle 0.35s 2;
-    }
-
-    @layer utilities {
-      .animate-float-slow {
-        animation: float-slow 6s ease-in-out infinite;
-      }
-
-      @keyframes float-slow {
-
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-
-        50% {
-          transform: translateY(-10px);
-        }
-      }
-    }
-
-    .timeline-year {
-      @apply px-5 py-2 rounded-full bg-white text-[#005DAA] border border-[#C49E4F]/40 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110 ring-1 ring-[#005DAA]/20 hover:bg-[#C49E4F]/20 focus:ring-2 focus:ring-[#C49E4F];
-    }
-  </style>
-
 
 
 </head>
@@ -227,7 +129,7 @@
               class="h-16 md:h-20 drop-shadow-xl animate-fade-in-up" />
           </div>
           <ul class="hidden md:flex gap-6 text-base font-semibold tracking-wide">
-            <li><a href="/" class="hover:text-highlight transition duration-200 " aria-current="page">Inicio</a></li>
+            <li><a href="/" class="hover:text-highlight transition duration-200 " >Inicio</a></li>
             <li><a href="/quienes-somos"
                 class="hover:text-highlight transition duration-200 aria-[current=page]:text-highlight"> ¿Quiénes
                 Somos?</a></li>
@@ -271,7 +173,8 @@
             <li><a href="../eventos" class="hover:text-highlight transition duration-200">Eventos</a></li>
             <li><a href="../participa" class="hover:text-highlight transition duration-200">Participa</a>
             </li>
-            <li><a href="../contacto" class="hover:text-highlight transition duration-200">Contacto</a></li>
+            <li><a href="../contacto" class="hover:text-highlight transition duration-200 aria-[current=page]:text-highlight"
+                                aria-current="page">Contacto</a></li>
             <li>
               <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" alt="English"
                 class="h-5 rounded-full shadow-lg" />
@@ -280,7 +183,6 @@
         </nav>
       </header>
     </section>
-
 
     <!--Contacto-->
     <section id="contacto" class="py-20 bg-gradient-to-br from-gray-950 to-gray-900 border-t border-blue-900"><br><br>
