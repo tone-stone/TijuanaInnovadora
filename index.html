@@ -11,9 +11,7 @@
         content="Tijuana, Innovadora, movimiento ciudadano, arte, ciencia, tecnología, liderazgo, proyectos sociales, esferas de influencia, cultura, desarrollo sostenible" />
     <meta name="author" content="Tijuana Innovadora" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.tijuanainnovadora.com/" />
-
-
+    <link rel="canonical" href="https://www.tijuanainnovadora.org/" />
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -124,23 +122,28 @@
             <!-- Overlay gradiente con efecto más editorial -->
             <div class="absolute inset-0 bg-gradient-to-br from-black/85 via-[#01426A]/20 to-black/90"></div>
 
-            <!-- Navbar elegante -->
+            <!-- Navbar elegante + menú hamburguesa -->
             <header id="navbar"
-                class="fixed top-0 left-0 w-full z-30 bg-gradient-to-b from-black/80 via-black/60 to-transparent backdrop-blur-lg transition-shadow shadow-lg">
-                <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-white">
-                    <div class="flex items-center gap-3">
+                class="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black/80 via-black/60 to-transparent backdrop-blur-lg transition-shadow shadow-lg">
+                <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between text-white" aria-label="Main">
+                    <!-- Brand -->
+                    <a href="/" class="flex items-center gap-3">
                         <img src="./src/assets/logos-organizacion/LogoTI-01.png" alt="Tijuana Innovadora"
-                            class="h-16 md:h-20 drop-shadow-xl animate-fade-in-up" />
-                    </div>
-                    <ul class="hidden md:flex gap-6 text-base font-semibold tracking-wide">
+                            class="h-16 md:h-20 drop-shadow-xl" />
+                        <span class="sr-only">Inicio</span>
+                    </a>
+
+                    <!-- Desktop nav -->
+                    <ul class="hidden md:flex gap-6 text-base font-semibold tracking-wide items-center">
                         <li><a href="#"
                                 class="hover:text-highlight transition duration-200 aria-[current=page]:text-highlight"
                                 aria-current="page">Inicio</a></li>
                         <li><a href="./quienes-somos" class="hover:text-highlight transition duration-200">Quiénes
                                 Somos</a></li>
+
                         <li class="relative group">
                             <button class="inline-flex items-center hover:text-highlight focus:outline-none"
-                                aria-haspopup="true" aria-expanded="false" id="btn-esferas">
+                                aria-haspopup="true" aria-expanded="false" id="btn-esferas-desktop">
                                 Esferas y Proyectos
                                 <svg class="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform duration-300"
                                     viewBox="0 0 20 20" fill="currentColor">
@@ -149,42 +152,126 @@
                                         clip-rule="evenodd" />
                                 </svg>
                             </button>
-                            <div role="menu" aria-labelledby="btn-esferas"
-                                class="absolute left-0 top-full w-64 bg-dark/50 backdrop-blur-xl text-white rounded-lg shadow-2xl invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50">
+                            <!-- dropdown desktop -->
+                            <div role="menu" aria-labelledby="btn-esferas-desktop"
+                                class="absolute left-0 top-full w-64 bg-black/60 backdrop-blur-xl text-white rounded-lg shadow-2xl invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50">
                                 <ul class="py-2">
-                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-white/10 transition"
                                             href="../esferas-proyectos/arte-industria.html">Arte en la Industria</a>
                                     </li>
-                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-white/10 transition"
                                             href="../esferas-proyectos/casa-ideas.html">Casa de las Ideas</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-white/10 transition"
                                             href="../esferas-proyectos/comuna-creativa.html">Comuna Creativa</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-white/10 transition"
                                             href="../esferas-proyectos/innovamoda.html">InnovaModa</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-white/10 transition"
                                             href="../esferas-proyectos/fablab.html">FABLAB</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-white/10 transition"
                                             href="../esferas-proyectos/lideres.html">Líderes</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-white/10 transition"
                                             href="../esferas-proyectos/paseo-fama.html">Paseo de la Fama</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-white/10 transition"
                                             href="../esferas-proyectos/sinfonica-juvenil.html">Sinfónica Juvenil</a>
                                     </li>
-                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-white/10 transition"
                                             href="../esferas-proyectos/tijuana-verde.html">Tijuana Verde</a></li>
                                 </ul>
                             </div>
                         </li>
+
                         <li><a href="./eventos" class="hover:text-highlight transition duration-200">Eventos</a></li>
                         <li><a href="./participa" class="hover:text-highlight transition duration-200">Participa</a>
                         </li>
                         <li><a href="./contacto" class="hover:text-highlight transition duration-200">Contacto</a></li>
-                        <li>
-                            <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" alt="English"
-                                class="h-5 rounded-full shadow-lg" />
-                        </li>
+                        <li><img src="https://hatscripts.github.io/circle-flags/flags/us.svg" alt="English"
+                                class="h-5 rounded-full shadow-lg" /></li>
                     </ul>
+
+                    <!-- Botón Hamburguesa -->
+                    <button id="btn-menu"
+                        class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 transition"
+                        aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú">
+                        <svg id="icon-open" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 7h16M4 12h16M4 17h16" />
+                        </svg>
+                        <svg id="icon-close" class="w-6 h-6 hidden" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
                 </nav>
+
+                <!-- Overlay -->
+                <div id="overlay"
+                    class="fixed inset-0 bg-black/50 opacity-0 invisible transition-opacity duration-300 md:hidden">
+                </div>
+
+                <!-- Panel móvil -->
+                <aside id="mobile-menu" class="fixed top-0 right-0 h-full w-[82%] max-w-sm translate-x-full md:hidden
+                bg-gradient-to-b from-[#0B0B0B] to-black text-white shadow-2xl
+                transition-transform duration-300 will-change-transform z-[60]" role="dialog" aria-modal="true"
+                    aria-labelledby="mobile-title">
+                    <div class="flex items-center justify-between p-4 border-b border-white/10">
+                        <h2 id="mobile-title" class="text-lg font-semibold">Menú</h2>
+                        <button id="btn-close" class="p-2 rounded-lg hover:bg-white/10" aria-label="Cerrar menú">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <nav class="p-4 space-y-1">
+                        <a href="#" class="block px-4 py-3 rounded-lg hover:bg-dark/10">Inicio</a>
+                        <a href="./quienes-somos" class="block px-4 py-3 rounded-lg hover:bg-white/10">Quiénes Somos</a>
+
+                        <!-- Acordeón Esferas (móvil) -->
+                        <details id="acc-esferas" class="group">
+                            <summary
+                                class="flex items-center justify-between px-4 py-3 rounded-lg hover:bg-white/10 cursor-pointer">
+                                <span>Esferas y Proyectos</span>
+                                <svg class="w-4 h-4 transition group-open:rotate-180" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </summary>
+                            <ul class="mt-1 pl-2">
+                                <li><a class="block px-4 py-2 rounded-lg hover:bg-white/10"
+                                        href="../esferas-proyectos/arte-industria.html">Arte en la Industria</a></li>
+                                <li><a class="block px-4 py-2 rounded-lg hover:bg-white/10"
+                                        href="../esferas-proyectos/casa-ideas.html">Casa de las Ideas</a></li>
+                                <li><a class="block px-4 py-2 rounded-lg hover:bg-white/10"
+                                        href="../esferas-proyectos/comuna-creativa.html">Comuna Creativa</a></li>
+                                <li><a class="block px-4 py-2 rounded-lg hover:bg-white/10"
+                                        href="../esferas-proyectos/innovamoda.html">InnovaModa</a></li>
+                                <li><a class="block px-4 py-2 rounded-lg hover:bg-white/10"
+                                        href="../esferas-proyectos/fablab.html">FABLAB</a></li>
+                                <li><a class="block px-4 py-2 rounded-lg hover:bg-white/10"
+                                        href="../esferas-proyectos/lideres.html">Líderes</a></li>
+                                <li><a class="block px-4 py-2 rounded-lg hover:bg-white/10"
+                                        href="../esferas-proyectos/paseo-fama.html">Paseo de la Fama</a></li>
+                                <li><a class="block px-4 py-2 rounded-lg hover:bg-white/10"
+                                        href="../esferas-proyectos/sinfonica-juvenil.html">Sinfónica Juvenil</a></li>
+                                <li><a class="block px-4 py-2 rounded-lg hover:bg-white/10"
+                                        href="../esferas-proyectos/tijuana-verde.html">Tijuana Verde</a></li>
+                            </ul>
+                        </details>
+
+                        <a href="./eventos" class="block px-4 py-3 rounded-lg hover:bg-white/10">Eventos</a>
+                        <a href="./participa" class="block px-4 py-3 rounded-lg hover:bg-white/10">Participa</a>
+                        <a href="./contacto" class="block px-4 py-3 rounded-lg hover:bg-white/10">Contacto</a>
+
+                        <div class="px-4 pt-3">
+                            <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" alt="English"
+                                class="h-5 rounded-full shadow" />
+                        </div>
+                    </nav>
+                </aside>
             </header>
 
             <!-- Video de fondo -->
@@ -237,11 +324,9 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- SECCIÓN: INNOVACIÓN EN CONSTANTE MOVIMIENTO-->
-
         <section class="relative overflow-hidden py-24 
             bg-gradient-to-br from-[#F4F4F4] via-[#F9FAFB] to-[#E5E7EB]">
 
@@ -385,7 +470,9 @@
             <!-- Ondas SVG decorativas (abajo) -->
             <div class="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none z-0">
                 <svg class="w-full h-[100px] md:h-[130px]" viewBox="0 0 1440 150" fill="none"
-                    preserveAspectRatio="none"><path d="M0,80L60,77.7C120,75,240,69,360,74.7C480,80,600,96,720,96C840,96,960,80,1080,69.3C1200,59,1320,53,1380,50.7L1440,48V150H0Z"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M0,80L60,77.7C120,75,240,69,360,74.7C480,80,600,96,720,96C840,96,960,80,1080,69.3C1200,59,1320,53,1380,50.7L1440,48V150H0Z"
                         fill="#F4F4F4" fill-opacity="1" />
                 </svg>
             </div>
@@ -489,8 +576,7 @@
                     </div>
 
                     <!-- Círculo interior con animación -->
-                    <img src="./src/assets/logos-organizacion/casa-ideas/casaideasnew.png"
-                        alt="Arte en la Industria"
+                    <img src="./src/assets/logos-organizacion/casa-ideas/casaideasnew.png" alt="Arte en la Industria"
                         class="w-full h-full object-cover rounded-full shadow-lg transition-transform duration-500 group-hover:scale-110" />
 
                     <!-- Efecto de onda al hacer hover -->
@@ -1173,8 +1259,8 @@
                         <!-- Slide 1 -->
                         <div
                             class="swiper-slide flex justify-center items-center hover:grayscale-0 transition duration-500">
-                            <img src="./src/assets/logos-organizacion/SJT Logo Transp PNG 2015.png"
-                                alt="Patrocinador 1" class="w-32 h-32 object-contain" />
+                            <img src="./src/assets/logos-organizacion/SJT Logo Transp PNG 2015.png" alt="Patrocinador 1"
+                                class="w-32 h-32 object-contain" />
                         </div>
                         <!-- Slide 2 -->
                         <div
@@ -1321,7 +1407,58 @@
         </footer>
 
         <!-- Scripts -->
-       
+
+         <!-- Script del menú -->
+        <script>
+            (function () {
+                const html = document.documentElement;
+                const btnOpen = document.getElementById('btn-menu');
+                const btnClose = document.getElementById('btn-close');
+                const overlay = document.getElementById('overlay');
+                const panel = document.getElementById('mobile-menu');
+                const iconOpen = document.getElementById('icon-open');
+                const iconClose = document.getElementById('icon-close');
+
+                const openMenu = () => {
+                    panel.classList.remove('translate-x-full');
+                    overlay.classList.remove('invisible');
+                    requestAnimationFrame(() => overlay.classList.add('opacity-100'));
+                    btnOpen.setAttribute('aria-expanded', 'true');
+                    iconOpen.classList.add('hidden'); iconClose.classList.remove('hidden');
+                    // bloquear scroll
+                    html.style.overflow = 'hidden';
+                };
+
+                const closeMenu = () => {
+                    panel.classList.add('translate-x-full');
+                    overlay.classList.add('opacity-0');
+                    overlay.addEventListener('transitionend', () => overlay.classList.add('invisible'), { once: true });
+                    btnOpen.setAttribute('aria-expanded', 'false');
+                    iconClose.classList.add('hidden'); iconOpen.classList.remove('hidden');
+                    // habilitar scroll
+                    html.style.overflow = '';
+                };
+
+                // Abrir / cerrar
+                btnOpen.addEventListener('click', () => {
+                    const expanded = btnOpen.getAttribute('aria-expanded') === 'true';
+                    expanded ? closeMenu() : openMenu();
+                });
+                btnClose.addEventListener('click', closeMenu);
+                overlay.addEventListener('click', closeMenu);
+
+                // Cerrar con ESC
+                window.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') closeMenu();
+                });
+
+                // Cerrar al hacer click en un enlace del panel
+                panel.querySelectorAll('a').forEach(a => {
+                    a.addEventListener('click', closeMenu);
+                });
+            })();
+        </script>
+
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 // Navbar scroll (usa #navbar solo si existe)
