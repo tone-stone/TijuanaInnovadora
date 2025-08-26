@@ -13,6 +13,8 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.tijuanainnovadora.com/" />
 
+
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -25,6 +27,15 @@
                         highlight: '#C49E4F',
                         dark: '#1A1A1A',
                         light: '#F4F4F4',
+                        arteindustria: '#CD545B',
+                        casaideas: '#DC6B2F',
+                        innovamoda: '#93328E',
+                        joveneslideres: '#211551',
+                        paseofama: '#FFC72C',
+                        sinfonica: '#93272C',
+                        tijuanaverde: '#C4D600',
+                        tiazul: '#01426A',
+                        tidorado: '#9A7611',
                     },
                 }
             }
@@ -81,7 +92,7 @@
     <link rel="stylesheet" href="./src/styles/layout.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./src/assets/logos-organización/Cabeza TI.png">
+    <link rel="icon" type="image/png" href="./src/assets/logos-organización/CabezaTI.png">
 
     <!-- Datos estructurados para Google (JSON-LD) -->
     <script type="application/ld+json">
@@ -100,111 +111,6 @@
     }
     </script>
 
-    <style>
-        /* Animación para el SVG de olas */
-        @keyframes svgloop {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .animate-svgloop {
-            animation: svgloop 18s linear infinite;
-        }
-
-        /* Gradiente animado (para texto, etc) */
-        @keyframes animate-gradient-x {
-
-            0%,
-            100% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-        }
-
-        .animate-gradient-x {
-            background-size: 200% 200%;
-            animation: animate-gradient-x 5s ease-in-out infinite;
-        }
-
-        /* Fade-in hacia arriba */
-        @keyframes fade-in-up {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .animate-fade-in-up {
-            animation: fade-in-up 1.2s cubic-bezier(.5, 0, .5, 1) both;
-        }
-
-        /* Rebote lento (botones) */
-        @keyframes bounce-slow {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .animate-bounce-slow {
-            animation: bounce-slow 2.4s infinite;
-        }
-
-        /* Wiggle (temblor breve, por ejemplo hashtags o decorativos) */
-        @keyframes wiggle {
-
-            0%,
-            100% {
-                transform: rotate(-2deg);
-            }
-
-            50% {
-                transform: rotate(2deg);
-            }
-        }
-
-        .animate-wiggle {
-            animation: wiggle 0.35s 2;
-        }
-
-        @layer utilities {
-            .animate-float-slow {
-                animation: float-slow 6s ease-in-out infinite;
-            }
-
-            @keyframes float-slow {
-
-                0%,
-                100% {
-                    transform: translateY(0);
-                }
-
-                50% {
-                    transform: translateY(-10px);
-                }
-            }
-        }
-    </style>
-
-
 
 </head>
 
@@ -218,7 +124,7 @@
             <!-- Overlay gradiente con efecto más editorial -->
             <div class="absolute inset-0 bg-gradient-to-br from-black/85 via-[#01426A]/20 to-black/90"></div>
 
-            <!-- Navbar elegante -->
+           <!-- Navbar elegante -->
             <header id="navbar"
                 class="fixed top-0 left-0 w-full z-30 bg-gradient-to-b from-black/80 via-black/60 to-transparent backdrop-blur-lg transition-shadow shadow-lg">
                 <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-white">
@@ -227,13 +133,13 @@
                             class="h-16 md:h-20 drop-shadow-xl animate-fade-in-up" />
                     </div>
                     <ul class="hidden md:flex gap-6 text-base font-semibold tracking-wide">
-                        <li><a href="../"
-                                class="hover:text-highlight transition duration-200 aria-[current=page]:text-highlight"
-                                aria-current="page">Inicio</a></li>
-                        <li><a href="../quienes-somos" class="hover:text-highlight transition duration-200">Quiénes
+                        <li><a href="/" class="hover:text-highlight transition duration-200">Inicio</a></li>
+                        <li><a href="/quienes-somos"
+                                class="hover:text-highlight transition duration-200">Quiénes
                                 Somos</a></li>
                         <li class="relative group">
-                            <button class="inline-flex items-center hover:text-highlight focus:outline-none"
+                            <button class="inline-flex items-center hover:text-highlight focus:outline-none aria-[current=page]:text-highlight"
+                                aria-current="page"
                                 aria-haspopup="true" aria-expanded="false" id="btn-esferas">
                                 Esferas y Proyectos
                                 <svg class="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform duration-300"
@@ -244,35 +150,35 @@
                                 </svg>
                             </button>
                             <div role="menu" aria-labelledby="btn-esferas"
-                                class="absolute left-0 top-full w-64 bg-white/10 backdrop-blur-xl text-white rounded-lg shadow-2xl invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50">
+                                class="absolute left-0 top-full w-64 bg-dark/50 backdrop-blur-xl text-white rounded-lg shadow-2xl invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50">
                                 <ul class="py-2">
-                                    <li><a class="block px-4 py-2 hover:bg-primary/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
                                             href="../esferas-proyectos/arte-industria.html">Arte en la Industria</a>
                                     </li>
-                                    <li><a class="block px-4 py-2 hover:bg-primary/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
                                             href="../esferas-proyectos/casa-ideas.html">Casa de las Ideas</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-primary/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
                                             href="../esferas-proyectos/comuna-creativa.html">Comuna Creativa</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-primary/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
                                             href="../esferas-proyectos/innovamoda.html">InnovaModa</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-primary/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
                                             href="../esferas-proyectos/fablab.html">FABLAB</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-primary/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
                                             href="../esferas-proyectos/lideres.html">Líderes</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-primary/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
                                             href="../esferas-proyectos/paseo-fama.html">Paseo de la Fama</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-primary/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
                                             href="../esferas-proyectos/sinfonica-juvenil.html">Sinfónica Juvenil</a>
                                     </li>
-                                    <li><a class="block px-4 py-2 hover:bg-primary/30 transition"
+                                    <li><a class="block px-4 py-2 hover:bg-dark/30 transition"
                                             href="../esferas-proyectos/tijuana-verde.html">Tijuana Verde</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li><a href="../eventos" class="hover:text-highlight transition duration-200">Eventos</a></li>
-                        <li><a href="../participa" class="hover:text-highlight transition duration-200">Participa</a>
+                        <li><a href="../participa" class="hover:text-highlight transition duration-200 ">Participa</a>
                         </li>
-                        <li><a href="../contacto" class="hover:text-highlight transition duration-200">Contacto</a></li>
+                        <li><a href="../contacto" class="hover:text-highlight transition duration-200 ">Contacto</a></li>
                         <li>
                             <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" alt="English"
                                 class="h-5 rounded-full shadow-lg" />
@@ -281,10 +187,9 @@
                 </nav>
             </header>
 
-
             <!-- Contenido central tipo portada de revista -->
             <div
-                class="relative z-10 h-full flex flex-col justify-center items-start pl-0 md:pl-14 lg:pl-24 xl:pl-36 max-w-4xl mx-auto text-white">
+                class="relative z-10 h-full flex flex-col justify-center items-start w-full pl-0 max-w-4xl text-white">
 
                 <!-- Badge animado -->
                 <span
@@ -295,9 +200,9 @@
                 <!-- Headline con subrayado animado -->
                 <h1 class="font-extrabold leading-tight mb-4 drop-shadow-xl relative animate-fade-in-up"
                     style="font-size: clamp(2.5rem, 5vw + 1rem, 5rem);" data-aos="fade-right">
-                    Arte en  <br />
+                    ARTE EN  <br />
                     <span class="relative z-10">
-                        la Industria
+                        LA INDUSTRIA
                         <span
                             class="absolute left-0 bottom-0 w-full h-3 bg-gradient-to-r from-[#C49E4F]/50 to-[#005DAA]/60 rounded-xl blur-[3px] -z-10 animate-pulse"></span>
                     </span>
@@ -1115,10 +1020,6 @@
                 </div>
             </div>
         </footer>
-
-        <!-- Scripts -->
-        <script src="./src/scripts/language.js"></script>
-        <script src="./src/scripts/app.js"></script>
 
         <script>
             document.addEventListener('DOMContentLoaded', () => {
