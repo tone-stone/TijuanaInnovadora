@@ -69,7 +69,12 @@
         <link rel="preconnect" href="https://cdn.tailwindcss.com" />
 
         <!-- Preload Hero -->
-        <link rel="preload" as="image" href="https://res.cloudinary.com/hriosisc/image/upload/v1756390353/TijuanaInnovadora/Images/InicioBanner_gzjsvv.webp" imagesrcset="https://res.cloudinary.com/hriosisc/image/upload/v1756390353/TijuanaInnovadora/Images/InicioBanner_gzjsvv.webp" imagesizes="100vw" />
+        <link
+            rel="preload"
+            as="image"
+            href="https://res.cloudinary.com/hriosisc/image/upload/v1756390353/TijuanaInnovadora/Images/InicioBanner_gzjsvv.webp"
+            imagesrcset="https://res.cloudinary.com/hriosisc/image/upload/v1756390353/TijuanaInnovadora/Images/InicioBanner_gzjsvv.webp"
+            imagesizes="100vw" />
 
         <!-- Open Graph -->
         <meta property="og:title" content="Tijuana Innovadora | Movimiento ciudadano con impacto global" />
@@ -110,7 +115,9 @@
     <body class="bg-white text-gray-900 font-sans">
         <main id="contenido">
             <!--Inicio Menu y Banner-->
-            <section class="relative h-screen w-full bg-cover bg-center flex items-center justify-center" style="background-image: url('https://res.cloudinary.com/hriosisc/image/upload/v1756390353/TijuanaInnovadora/Images/InicioBanner_gzjsvv.webp')">
+            <section
+                class="relative h-screen w-full bg-cover bg-center flex items-center justify-center"
+                style="background-image: url('https://res.cloudinary.com/hriosisc/image/upload/v1756390353/TijuanaInnovadora/Images/InicioBanner_gzjsvv.webp')">
                 <!-- Overlay gradiente con efecto más editorial -->
                 <div class="absolute inset-0 bg-gradient-to-br from-black/85 via-[#01426A]/20 to-black/90"></div>
 
@@ -246,7 +253,7 @@
 
                 <!-- Video de fondo -->
                 <iframe
-                    class="absolute inset-0 w-full h-full object-cover z-0"
+                    class="absolute inset-0 w-full h-full object-cover z-0 hidden lg:block"
                     src="https://player.cloudinary.com/embed/?cloud_name=hriosisc&public_id=TijuanaInnovadora%2FCondeNast_xvuhmo&profile=cld-default&autoplay=true&loop=true&muted=true&controls=false&preload=auto"
                     width="640"
                     height="360"
@@ -260,7 +267,7 @@
             </video> -->
 
                 <!-- Contenido central tipo portada de revista -->
-                <div class="relative z-10 h-full flex flex-col justify-center items-start w-full pl-0 max-w-4xl text-white">
+                <div class="relative z-10 h-full flex flex-col justify-center items-start w-full mdpl-0 max-w-4xl text-white px-6 mx-auto md:p-0 md:m-0">
                     <!-- Badge animado -->
                     <span
                         class="mb-2 inline-block text-xs md:text-sm tracking-[0.3em] font-bold uppercase bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] bg-clip-text text-transparent animate-gradient-x shadow-md animate-fade-in-up">
@@ -299,7 +306,7 @@
             </section>
 
             <!-- SECCIÓN: INNOVACIÓN EN CONSTANTE MOVIMIENTO-->
-            <section class="relative overflow-hidden py-24 bg-gradient-to-br from-[#F4F4F4] via-[#F9FAFB] to-[#E5E7EB]">
+            <section class="relative overflow-hidden py-20 lg:py-24 bg-gradient-to-br from-[#F4F4F4] via-[#F9FAFB] to-[#E5E7EB] px-6 md:px-0">
                 <!-- SVG animado: fondo, ondas abajo con gradiente -->
                 <div class="absolute bottom-0 left-0 w-full h-[140px] pointer-events-none rotate-180 z-0">
                     <div class="w-[200%] h-full flex animate-svgloop">
@@ -332,14 +339,19 @@
                     </div>
                 </div>
 
+                <h2
+                    class="text-3xl md:text-5xl font-extrabold leading-tight mb-6 bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] bg-clip-text text-transparent animate-gradient-x drop-shadow-lg shadow-accent mt-6 md:mt-0 block md:hidden"
+                    data-aos="fade-left">
+                    INNOVACIÓN EN <span class="text-accent">CONSTANTE MOVIMIENTO</span>
+                </h2>
                 <!-- Glow editorial dinámico -->
                 <div
                     class="absolute right-0 top-0 w-[400px] h-[400px] bg-[radial-gradient(ellipse_at_top_right,rgba(196,158,79,0.16)_0,transparent_75%)] blur-3xl animate-pulse z-0"></div>
 
                 <!-- Layout tipo revista -->
-                <div class="relative z-10 max-w-7xl mx-auto px-4 grid md:grid-cols-5 gap-8 items-center">
+                <div class="relative z-10 max-w-[calc(100vw_-_4rem)] lg:max-w-7xl mx-auto md:px-4 lg:grid md:grid-cols-5 lg:gap-8 items-center">
                     <!-- Imagen editorial izquierda (simula portada de revista, puedes cambiarla por otra relevante) -->
-                    <div class="col-span-2 flex items-center justify-center md:justify-end">
+                    <div class="col-span-2 flex items-center justify-center md:justify-end w-[320px] mx-auto md:w-auto">
                         <div class="relative group">
                             <img
                                 src="https://res.cloudinary.com/hriosisc/image/upload/v1756390367/TijuanaInnovadora/Images/DonJose_jc4o2d.png"
@@ -355,10 +367,11 @@
                     <!-- Texto y efectos modernos -->
                     <div class="col-span-3 flex flex-col items-start justify-center text-left">
                         <h2
-                            class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] bg-clip-text text-transparent animate-gradient-x drop-shadow-lg shadow-accent"
+                            class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] bg-clip-text text-transparent animate-gradient-x drop-shadow-lg shadow-accent mt-6 md:mt-0 hidden md:block"
                             data-aos="fade-left">
                             INNOVACIÓN EN <span class="text-accent">CONSTANTE MOVIMIENTO</span>
                         </h2>
+                        <br class="md:hidden">
                         <p class="text-xl text-gray-700/90 leading-relaxed mb-6 animate-fade-in-up" data-aos="fade-up" data-aos-delay="200">
                             <span class="block font-semibold text-primary/90">Tijuana Innovadora</span>
                             es una plataforma que impulsa el cambio con iniciativas sociales, culturales, científicas y tecnológicas, reuniendo talento local para crear impacto
@@ -383,7 +396,6 @@
                     class="absolute top-0 left-0 w-[60vw] h-[60vw] bg-[radial-gradient(circle_at_20%_0%,rgba(1,66,106,0.08)_0,transparent_60%)] blur-2xl opacity-80 pointer-events-none z-0"></div>
                 <div
                     class="absolute right-0 bottom-0 w-[44vw] h-[44vw] bg-[radial-gradient(circle_at_80%_100%,rgba(196,158,79,0.11)_0,transparent_70%)] blur-2xl opacity-70 pointer-events-none z-0"></div>
-
                 <div class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
                     <!-- BLOQUE IZQUIERDO: LOGO, HEADLINE Y DESCRIPCIÓN -->
                     <div class="flex flex-col items-start md:items-start text-left space-y-6">
@@ -402,7 +414,7 @@
                             class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-2 bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] bg-clip-text text-transparent animate-gradient-x drop-shadow-lg shadow-accent"
                             data-aos="fade-right">
                             Tijuana Innovadora<br />
-                            <span class="text-accent">Un movimiento que nos une</span>
+                            <span class="text-accent text-2xl md:text-3xl">Un movimiento que nos une</span>
                         </h2>
                         <!-- Descripción moderna -->
                         <p class="text-lg md:text-xl text-gray-800/90 font-medium leading-relaxed animate-fade-in-up" data-aos="fade-left" data-aos-delay="200">
@@ -476,7 +488,7 @@
                             <p class="text-base text-gray-700 mb-2">
                                 Descubre las áreas clave que son motor de transformación en nuestra comunidad: arte, ciencia, moda, liderazgo, medio ambiente y más.
                             </p>
-                            <span class="inline-block text-accent font-semibold animate-wiggle">#InnovaciónParaTodos</span>
+                            <span class="inline-block text-accent font-semibold animate-wiggle text-center md:text-left">#InnovaciónParaTodos</span>
                         </div>
                         <!-- Imagen tipo portada revista -->
                         <div class="flex-1 flex justify-center md:justify-end">
@@ -505,15 +517,15 @@
                 </div>
 
                 <!-- Grid dinámico tipo revista -->
-                <div class="relative z-10 max-w-7xl mx-auto grid md:grid-cols-3 gap-10 px-4 py-16">
+                <div class="relative z-10 lg:max-w-7xl mx-auto flex flex-row flex-wrap justify-evenly lg:grid md:grid-cols-3 gap-10 px-6 py-16">
                     <!-- Tarjeta dinámica -->
                     <div
                         onclick="openModal({
-    img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390329/TijuanaInnovadora/logos-organizacion/Arte-Industria/artenew_mwheea.png',
-    title: 'Arte en la Industria',
-    desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
-    link: '../esferas-proyectos/arte-industria.html'})"
-                        class="relative w-64 h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
+                            img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390329/TijuanaInnovadora/logos-organizacion/Arte-Industria/artenew_mwheea.png',
+                            title: 'Arte en la Industria',
+                            desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
+                            link: '../esferas-proyectos/arte-industria.html'})"
+                        class="relative w-44 h-44 lg:w-64 lg:h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
                         data-aos="zoom-in">
                         <!-- Brillo animado -->
                         <div
@@ -530,15 +542,14 @@
                     </div>
 
                     <!-- Repite el bloque con los demás contenidos (cambia imagen, título, desc, link) -->
-
                     <!-- Tarjeta dinámica -->
                     <div
                         onclick="openModal({
-    img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390309/TijuanaInnovadora/logos-organizacion/Casa-Ideas/casaideasnew_omybab.png',
-    title: 'Casa de las Ideas',
-    desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
-    link: '../esferas-proyectos/casa-ideas.html'})"
-                        class="relative w-64 h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
+                            img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390309/TijuanaInnovadora/logos-organizacion/Casa-Ideas/casaideasnew_omybab.png',
+                            title: 'Casa de las Ideas',
+                            desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
+                            link: '../esferas-proyectos/casa-ideas.html'})"
+                        class="relative w-44 h-44 lg:w-64 lg:h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
                         data-aos="zoom-in">
                         <!-- Brillo animado -->
                         <div
@@ -557,11 +568,11 @@
                     <!-- Tarjeta dinámica -->
                     <div
                         onclick="openModal({
-    img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390291/TijuanaInnovadora/logos-organizacion/InnovaModa/innavamodanew_war6ja.png',
-    title: 'Innovamoda',
-    desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
-    link: '../esferas-proyectos/arte-industria.html'})"
-                        class="relative w-64 h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
+                            img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390291/TijuanaInnovadora/logos-organizacion/InnovaModa/innavamodanew_war6ja.png',
+                            title: 'Innovamoda',
+                            desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
+                            link: '../esferas-proyectos/arte-industria.html'})"
+                        class="relative w-44 h-44 lg:w-64 lg:h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
                         data-aos="zoom-in">
                         <!-- Brillo animado -->
                         <div
@@ -580,59 +591,53 @@
                     <!-- Tarjeta dinámica -->
                     <div
                         onclick="openModal({
-    img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390261/TijuanaInnovadora/logos-organizacion/Lideres/LideresNew_y4dtjz.png',
-    title: 'Lideres',
-    desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
-    link: '../esferas-proyectos/lideres.html'})"
-                        class="relative w-64 h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
+                            img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390261/TijuanaInnovadora/logos-organizacion/Lideres/LideresNew_y4dtjz.png',
+                            title: 'Lideres',
+                            desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
+                            link: '../esferas-proyectos/lideres.html'})"
+                        class="relative w-44 h-44 lg:w-64 lg:h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
                         data-aos="zoom-in">
                         <!-- Brillo animado -->
                         <div
                             class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-50 transition duration-500 pointer-events-none rounded-full"></div>
-
                         <!-- Círculo interior con animación -->
                         <img
                             src="https://res.cloudinary.com/hriosisc/image/upload/v1756390261/TijuanaInnovadora/logos-organizacion/Lideres/LideresNew_y4dtjz.png"
                             alt="Lideres"
                             class="w-full h-full object-cover rounded-full shadow-lg transition-transform duration-500 group-hover:scale-110" />
-
                         <!-- Efecto de onda al hacer hover -->
                         <span class="absolute w-full h-full rounded-full border border-accent animate-ping opacity-0 group-hover:opacity-20"></span>
                     </div>
 
                     <!-- Repite el bloque con los demás contenidos (cambia imagen, título, desc, link) -->
-
                     <!-- Tarjeta dinámica -->
                     <div
                         onclick="openModal({
-    img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390174/TijuanaInnovadora/logos-organizacion/Tijuana-Verde/verdenew_kb24ck.png',
-    title: 'Tijuana Verde',
-    desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
-    link: '../esferas-proyectos/arte-industria.html'})"
-                        class="relative w-64 h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
+                            img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390174/TijuanaInnovadora/logos-organizacion/Tijuana-Verde/verdenew_kb24ck.png',
+                            title: 'Tijuana Verde',
+                            desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
+                            link: '../esferas-proyectos/arte-industria.html'})"
+                        class="relative w-44 h-44 lg:w-64 lg:h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
                         data-aos="zoom-in">
                         <!-- Brillo animado -->
                         <div
                             class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-50 transition duration-500 pointer-events-none rounded-full"></div>
-
                         <!-- Círculo interior con animación -->
                         <img
                             src="https://res.cloudinary.com/hriosisc/image/upload/v1756390174/TijuanaInnovadora/logos-organizacion/Tijuana-Verde/verdenew_kb24ck.png"
                             alt="Arte en la Industria"
                             class="w-full h-full object-cover rounded-full shadow-lg transition-transform duration-500 group-hover:scale-110" />
-
                         <!-- Efecto de onda al hacer hover -->
                         <span class="absolute w-full h-full rounded-full border border-accent animate-ping opacity-0 group-hover:opacity-20"></span>
                     </div>
-
                     <!-- Tarjeta dinámica -->
                     <div
                         onclick="openModal({
-    img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390213/TijuanaInnovadora/logos-organizacion/Sinfonica-Juvenil/sinfonicanew_pghr5y.png',
-    title: 'Sinfonica Juvenil',
-    desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
-    link: '../esferas-proyectos/arte-industria.html'})"
-                        class="relative w-64 h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
+                            img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390213/TijuanaInnovadora/logos-organizacion/Sinfonica-Juvenil/sinfonicanew_pghr5y.png',
+                            title: 'Sinfonica Juvenil',
+                            desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
+                            link: '../esferas-proyectos/arte-industria.html'})"
+                        class="relative w-44 h-44 lg:w-64 lg:h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
                         data-aos="zoom-in">
                         <!-- Brillo animado -->
                         <div
@@ -651,11 +656,11 @@
                     <!-- Tarjeta dinámica -->
                     <div
                         onclick="openModal({
-    img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390172/TijuanaInnovadora/logos-organizacion/Tijuana-Verde/ESFERAS-04_o8oj7n.png',
-    title: 'Arte en la Industria',
-    desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
-    link: '../esferas-proyectos/arte-industria.html'})"
-                        class="relative w-64 h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
+                            img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390172/TijuanaInnovadora/logos-organizacion/Tijuana-Verde/ESFERAS-04_o8oj7n.png',
+                            title: 'Arte en la Industria',
+                            desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
+                            link: '../esferas-proyectos/arte-industria.html'})"
+                        class="relative w-44 h-44 lg:w-64 lg:h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
                         data-aos="zoom-in">
                         <!-- Brillo animado -->
                         <div
@@ -674,11 +679,11 @@
                     <!-- Tarjeta dinámica -->
                     <div
                         onclick="openModal({
-    img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390281/TijuanaInnovadora/logos-organizacion/InnovaModa/ESFERAS-02_rhyjpw.png',
-    title: 'Arte en la Industria',
-    desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
-    link: '../esferas-proyectos/arte-industria.html'})"
-                        class="relative w-64 h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
+                            img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390281/TijuanaInnovadora/logos-organizacion/InnovaModa/ESFERAS-02_rhyjpw.png',
+                            title: 'Arte en la Industria',
+                            desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
+                            link: '../esferas-proyectos/arte-industria.html'})"
+                        class="relative w-44 h-44 lg:w-64 lg:h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
                         data-aos="zoom-in">
                         <!-- Brillo animado -->
                         <div
@@ -697,11 +702,11 @@
                     <!-- Tarjeta dinámica -->
                     <div
                         onclick="openModal({
-    img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390281/TijuanaInnovadora/logos-organizacion/InnovaModa/ESFERAS-02_rhyjpw.png',
-    title: 'Arte en la Industria',
-    desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
-    link: '../esferas-proyectos/arte-industria.html'})"
-                        class="relative w-64 h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
+                            img: 'https://res.cloudinary.com/hriosisc/image/upload/v1756390281/TijuanaInnovadora/logos-organizacion/InnovaModa/ESFERAS-02_rhyjpw.png',
+                            title: 'Arte en la Industria',
+                            desc: 'El arte se fusiona con la innovación para transformar espacios productivos y enriquecer la cultura local.',
+                            link: '../esferas-proyectos/arte-industria.html'})"
+                        class="relative w-44 h-44 lg:w-64 lg:h-64 bg-white rounded-full shadow-2xl overflow-hidden cursor-pointer flex items-center justify-center text-center group transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-110 animate-float-slow"
                         data-aos="zoom-in">
                         <!-- Brillo animado -->
                         <div
@@ -728,7 +733,7 @@
                 <div class="max-w-7xl mx-auto px-4">
                     <!-- Título ultra dinámico -->
                     <h3
-                        class="text-4xl md:text-5xl font-black text-center mb-4 tracking-tighter bg-gradient-to-r from-[#C49E4F] via-white to-[#005DAA] bg-clip-text text-transparent animate-gradient-x drop-shadow-2xl shadow-primary">
+                        class="text-4xl md:text-5xl font-black text-left mb-4 tracking-tighter bg-gradient-to-r from-[#C49E4F] via-white to-[#005DAA] bg-clip-text text-transparent animate-gradient-x drop-shadow-2xl shadow-primary">
                         Redes<span class="text-accent"> Sociales</span>
                     </h3>
                     <div class="mx-auto mb-10 w-24 h-1 rounded-full bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] animate-pulse"></div>
@@ -889,31 +894,31 @@
                 </div>
                 <div class="max-w-7xl mx-auto px-4 relative z-10">
                     <h3
-                        class="text-3xl md:text-4xl font-extrabold mb-12 text-center bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] bg-clip-text text-transparent animate-gradient-x tracking-tight drop-shadow-lg shadow-accent">
+                        class="text-3xl md:text-4xl font-extrabold mb-12 text-le bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] bg-clip-text text-transparent animate-gradient-x tracking-tight drop-shadow-lg shadow-accent">
                         <i class="fa-regular fa-newspaper text-[#C49E4F] mr-2"></i> Noticias
                     </h3>
                     <div class="grid md:grid-cols-3 gap-10">
                         <!-- Noticia 1 -->
                         <article
-                            class="relative group bg-white/95 border border-primary/10 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-fade-in-up">
+                            class="relative group bg-white/95 border border-primary/10 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-fade-in-up delay-200 w-full md:max-w-[390px] mx-auto md:m-auto">
                             <a href="https://tijuanainnovadora.com/noticia-1" target="_blank" class="block focus:outline-none">
                                 <img
                                     src="https://res.cloudinary.com/hriosisc/image/upload/v1756390374/TijuanaInnovadora/Images/Clinica36_nyk8ic.jpg"
                                     alt="Lanzamiento de nueva iniciativa verde"
-                                    class="w-full h-44 object-cover group-hover:scale-105 transition duration-500"
+                                    class="w-full h-60 md:h-44 object-cover group-hover:scale-105 transition duration-500"
                                     loading="lazy" />
                                 <!-- Tag y fecha -->
                                 <div class="absolute top-4 left-4 flex items-center gap-2 z-10">
                                     <span
-                                        class="bg-gradient-to-r from-[#C49E4F] to-[#005DAA] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg drop-shadow-lg animate-wiggle"
+                                        class="bg-gradient-to-r from-[#C49E4F] to-[#005DAA] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg drop-shadow-lg animate-wiggle border border-white/50"
                                         >Ecología</span
                                     >
-                                    <span class="bg-white/80 text-primary text-xs font-semibold px-2 py-1 rounded shadow">Jun 2025</span>
+                                    <span class="bg-white/80 text-primary text-xs font-semibold px-2 py-1 rounded shadow border border-white/50">Jun 2025</span>
                                 </div>
                                 <div class="p-6 text-left">
                                     <h4 class="font-extrabold text-xl text-[#005DAA] mb-1 group-hover:text-highlight transition">Lanzamiento de nueva iniciativa verde</h4>
                                     <p class="text-gray-600 text-base mb-4">Tijuana Innovadora impulsa nuevos proyectos ecológicos en la ciudad.</p>
-                                    <span class="text-sm text-highlight font-semibold flex items-center gap-2 group-hover:underline"
+                                    <span class="text-highlight font-semibold flex items-center text-end ml-auto gap-2 group-hover:underline max-w-max"
                                         >Leer más <i class="fa-solid fa-arrow-right"></i
                                     ></span>
                                 </div>
@@ -921,23 +926,24 @@
                         </article>
                         <!-- Noticia 2 -->
                         <article
-                            class="relative group bg-white/95 border border-primary/10 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-fade-in-up delay-100">
+                            class="relative group bg-white/95 border border-primary/10 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-fade-in-up delay-200 w-full md:max-w-[390px] mx-auto md:m-auto">
                             <a href="https://tijuanainnovadora.com/noticia-2" target="_blank" class="block focus:outline-none">
                                 <img
                                     src="https://res.cloudinary.com/hriosisc/image/upload/v1756390403/TijuanaInnovadora/Images/InauguracionArteIndustriaBibliotecaElCajon_cnwflx.jpg"
                                     alt="Aliado estratégico internacional"
-                                    class="w-full h-44 object-cover group-hover:scale-105 transition duration-500"
+                                    class="w-full h-60 md:h-44 object-cover group-hover:scale-105 transition duration-500"
                                     loading="lazy" />
                                 <div class="absolute top-4 left-4 flex items-center gap-2 z-10">
-                                    <span class="bg-gradient-to-r from-[#005DAA] to-[#C49E4F] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg drop-shadow-lg"
+                                    <span
+                                        class="bg-gradient-to-r from-[#005DAA] to-[#C49E4F] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg drop-shadow-lg border border-white/50"
                                         >Internacional</span
                                     >
-                                    <span class="bg-white/80 text-primary text-xs font-semibold px-2 py-1 rounded shadow">Mayo 2025</span>
+                                    <span class="bg-white/80 text-primary text-xs font-semibold px-2 py-1 rounded shadow border border-white/50">Mayo 2025</span>
                                 </div>
                                 <div class="p-6 text-left">
                                     <h4 class="font-extrabold text-xl text-[#005DAA] mb-1 group-hover:text-highlight transition">Aliado estratégico internacional</h4>
                                     <p class="text-gray-600 text-base mb-4">Colaboración con universidades y ONGs internacionales.</p>
-                                    <span class="text-sm text-highlight font-semibold flex items-center gap-2 group-hover:underline"
+                                    <span class="text-highlight font-semibold flex items-center text-end ml-auto gap-2 group-hover:underline max-w-max"
                                         >Leer más <i class="fa-solid fa-arrow-right"></i
                                     ></span>
                                 </div>
@@ -945,23 +951,24 @@
                         </article>
                         <!-- Noticia 3 -->
                         <article
-                            class="relative group bg-white/95 border border-primary/10 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-fade-in-up delay-200">
+                            class="relative group bg-white/95 border border-primary/10 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-fade-in-up delay-200 w-full md:max-w-[390px] mx-auto md:m-auto">
                             <a href="https://tijuanainnovadora.com/noticia-3" target="_blank" class="block focus:outline-none">
                                 <img
                                     src="https://res.cloudinary.com/hriosisc/image/upload/v1756390369/TijuanaInnovadora/Images/mariaeugeniaacevedo_csfbcm.jpg"
                                     alt="Convocatoria abierta para voluntarios"
-                                    class="w-full h-44 object-cover group-hover:scale-105 transition duration-500"
+                                    class="w-full h-60 md:h-44 object-cover group-hover:scale-105 transition duration-500"
                                     loading="lazy" />
                                 <div class="absolute top-4 left-4 flex items-center gap-2 z-10">
-                                    <span class="bg-gradient-to-r from-[#005DAA] to-[#C49E4F] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg drop-shadow-lg"
+                                    <span
+                                        class="bg-gradient-to-r from-[#005DAA] to-[#C49E4F] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg drop-shadow-lg border border-white/50"
                                         >Voluntariado</span
                                     >
-                                    <span class="bg-white/80 text-primary text-xs font-semibold px-2 py-1 rounded shadow">Abril 2025</span>
+                                    <span class="bg-white/80 text-primary text-xs font-semibold px-2 py-1 rounded shadow border border-white/50">Abril 2025</span>
                                 </div>
                                 <div class="p-6 text-left">
                                     <h4 class="font-extrabold text-xl text-[#005DAA] mb-1 group-hover:text-highlight transition">Convocatoria abierta para voluntarios</h4>
                                     <p class="text-gray-600 text-base mb-4">Participa en nuestros programas comunitarios y transforma tu entorno.</p>
-                                    <span class="text-sm text-highlight font-semibold flex items-center gap-2 group-hover:underline"
+                                    <span class="text-highlight font-semibold flex items-center text-end ml-auto gap-2 group-hover:underline max-w-max"
                                         >Leer más <i class="fa-solid fa-arrow-right"></i
                                     ></span>
                                 </div>
@@ -992,18 +999,18 @@
                             data-aos="fade-right">
                             <!-- Badge o fecha -->
                             <div class="absolute top-6 left-6 z-10">
-                                <span class="bg-primary text-white font-semibold px-4 py-1 rounded-full text-xs shadow-lg animate-wiggle">SEP 2025</span>
+                                <span class="bg-primary text-white font-semibold px-4 py-1 rounded-full text-xs shadow-lg animate-wiggle border border-white/90">SEP 2025</span>
                             </div>
                             <!-- Imagen decorativa (opcional) -->
                             <img
                                 src="https://res.cloudinary.com/hriosisc/image/upload/v1756390393/TijuanaInnovadora/Images/TetsuoAgata_Toyota_omm4e4.jpg"
                                 alt="Congreso de Innovación 2025"
                                 class="mb-5 rounded-xl shadow-md w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-300" />
-                            <h4 class="font-bold text-xl text-[#005DAA] mb-2 group-hover:text-accent transition">Congreso de Innovación 2025</h4>
-                            <p class="text-gray-700 mb-5">Únete a nuestro evento insignia con líderes y emprendedores de toda la región.</p>
+                            <h4 class="font-bold text-xl text-[#005DAA] mb-2 group-hover:text-accent transition text-start">Congreso de Innovación 2025</h4>
+                            <p class="text-gray-700 mb-5 text-start">Únete a nuestro evento insignia con líderes y emprendedores de toda la región.</p>
                             <a
                                 href="#"
-                                class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-primary/90 hover:bg-primary text-white font-semibold shadow-lg transition-all duration-300 scale-100 hover:scale-105 focus:ring-2 ring-accent/40">
+                                class="inline-flex justify-center items-center gap-2 px-8 py-2 rounded-full bg-primary/90 hover:bg-primary text-white font-semibold shadow-lg transition-all duration-300 scale-100 hover:scale-105 focus:ring-2 ring-accent/40">
                                 <i class="fa-solid fa-calendar-check"></i>
                                 Ver detalles
                             </a>
@@ -1013,17 +1020,17 @@
                             class="group relative bg-white/90 rounded-3xl shadow-2xl p-8 overflow-hidden hover:-translate-y-2 transition-all duration-400 border border-primary/10 animate-fade-in-up"
                             data-aos="fade-left">
                             <div class="absolute top-6 left-6 z-10">
-                                <span class="bg-accent text-white font-semibold px-4 py-1 rounded-full text-xs shadow-lg animate-wiggle">NOV 2025</span>
+                                <span class="bg-primary text-white font-semibold px-4 py-1 rounded-full text-xs shadow-lg animate-wiggle border border-white/90">NOV 2025</span>
                             </div>
                             <img
                                 src="https://res.cloudinary.com/hriosisc/image/upload/v1756390359/TijuanaInnovadora/Images/ti2020_vzfqla.jpg"
                                 alt="Festival de Arte Urbano"
                                 class="mb-5 rounded-xl shadow-md w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-300" />
-                            <h4 class="font-bold text-xl text-[#005DAA] mb-2 group-hover:text-primary transition">Festival de Arte Urbano</h4>
-                            <p class="text-gray-700 mb-5">Celebramos la creatividad local a través de murales, danza y música.</p>
+                            <h4 class="font-bold text-xl text-[#005DAA] mb-2 group-hover:text-primary transition text-left">Festival de Arte Urbano</h4>
+                            <p class="text-gray-700 mb-5 text-left">Celebramos la creatividad local a través de murales, danza y música.</p>
                             <a
                                 href="#"
-                                class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-primary/90 hover:bg-primary text-white font-semibold shadow-lg transition-all duration-300 scale-100 hover:scale-105 focus:ring-2 ring-accent/40">
+                                class="inline-flex justify-center items-center gap-2 px-8 py-2 rounded-full bg-primary/90 hover:bg-primary text-white font-semibold shadow-lg transition-all duration-300 scale-100 hover:scale-105 focus:ring-2 ring-accent/40">
                                 <i class="fa-solid fa-calendar-check"></i>
                                 Más información
                             </a>
@@ -1039,21 +1046,21 @@
 
                 <div class="max-w-7xl mx-auto px-6 relative z-10">
                     <h3
-                        class="text-center text-4xl md:text-5xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-[#005DAA] via-[#C49E4F] to-[#005DAA] bg-clip-text text-transparent animate-gradient-x drop-shadow-xl">
-                        <i class="fa-solid fa-handshake-angle mr-2"></i> ¿Cómo puedes participar en Tijuana Innovadora?
+                        class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-[#005DAA] via-[#C49E4F] to-[#005DAA] bg-clip-text text-transparent animate-gradient-x drop-shadow-xl text-left">
+                        ¿Cómo puedes participar en Tijuana Innovadora?  <i class="fa-solid fa-handshake-angle mr-2"></i>
                     </h3>
 
-                    <p class="text-xl text-center text-gray-800/90 max-w-3xl mx-auto mb-16 animate-fade-in-up">
+                    <p class="text-xl text-left text-gray-800/90 max-w-3xl mx-auto mb-16 animate-fade-in-up">
                         Sé parte del cambio. Hay muchas formas de sumarte a este gran movimiento ciudadano. Participa desde donde estés, como puedas y con lo que mejor sabes hacer.
                     </p>
 
-                    <div class="grid md:grid-cols-3 gap-10 items-start">
+                    <div class="grid md:grid-cols-3 gap-8 items-start">
                         <!-- Donante -->
                         <div
                             class="bg-white/90 rounded-2xl shadow-xl border border-accent/10 group hover:-translate-y-2 transition-all duration-300 animate-fade-left p-6 flex flex-col items-center text-center">
                             <i class="fa-solid fa-hand-holding-dollar text-4xl text-[#C49E4F] mb-4 animate-bounce-slow"></i>
                             <h4 class="font-bold text-lg mb-1 text-accent">Donante</h4>
-                            <p class="text-gray-600 text-base">
+                            <p class="text-gray-600 text-base text-left">
                                 Apoya económicamente los proyectos sociales y culturales de Tijuana Innovadora. Tu aportación tiene un gran impacto.
                             </p>
                         </div>
@@ -1063,7 +1070,9 @@
                             class="bg-white/90 rounded-2xl shadow-xl border border-primary/10 group hover:-translate-y-2 transition-all duration-300 animate-fade-up p-6 flex flex-col items-center text-center">
                             <i class="fa-solid fa-people-arrows text-4xl text-[#005DAA] mb-4 animate-bounce-slow"></i>
                             <h4 class="font-bold text-lg mb-1 text-primary">Aliado</h4>
-                            <p class="text-gray-600 text-base">Colabora como institución, empresa u organización en programas y acciones conjuntas de alto impacto comunitario.</p>
+                            <p class="text-gray-600 text-base text-left">
+                                Colabora como institución, empresa u organización en programas y acciones conjuntas de alto impacto comunitario.
+                            </p>
                         </div>
 
                         <!-- Patrocinador -->
@@ -1071,7 +1080,7 @@
                             class="bg-white/90 rounded-2xl shadow-xl border border-accent/10 group hover:-translate-y-2 transition-all duration-300 animate-fade-right p-6 flex flex-col items-center text-center">
                             <i class="fa-solid fa-bullhorn text-4xl text-[#C49E4F] mb-4 animate-bounce-slow"></i>
                             <h4 class="font-bold text-lg mb-1 text-accent">Patrocinador</h4>
-                            <p class="text-gray-600 text-base">Impulsa eventos, ferias o campañas de Tijuana Innovadora con tu marca y presencia estratégica.</p>
+                            <p class="text-gray-600 text-base text-left">Impulsa eventos, ferias o campañas de Tijuana Innovadora con tu marca y presencia estratégica.</p>
                         </div>
 
                         <!-- Voluntario -->
@@ -1079,7 +1088,7 @@
                             class="bg-white/90 rounded-2xl shadow-xl border border-primary/10 group hover:-translate-y-2 transition-all duration-300 animate-fade-left delay-100 p-6 flex flex-col items-center text-center">
                             <i class="fa-solid fa-user-plus text-4xl text-[#005DAA] mb-4 animate-bounce-slow"></i>
                             <h4 class="font-bold text-lg mb-1 text-primary">Voluntario</h4>
-                            <p class="text-gray-600 text-base">Únete a brigadas, actividades comunitarias y acciones de cambio directo. ¡Tus manos transforman!</p>
+                            <p class="text-gray-600 text-base text-left">Únete a brigadas, actividades comunitarias y acciones de cambio directo. ¡Tus manos transforman!</p>
                         </div>
 
                         <!-- Servicio social -->
@@ -1087,7 +1096,7 @@
                             class="bg-white/90 rounded-2xl shadow-xl border border-accent/10 group hover:-translate-y-2 transition-all duration-300 animate-fade-up delay-150 p-6 flex flex-col items-center text-center">
                             <i class="fa-solid fa-graduation-cap text-4xl text-[#C49E4F] mb-4 animate-bounce-slow"></i>
                             <h4 class="font-bold text-lg mb-1 text-accent">Servicio Social</h4>
-                            <p class="text-gray-600 text-base">Cumple tu servicio social en proyectos reales que generan transformación social y profesionalismo.</p>
+                            <p class="text-gray-600 text-base text-left">Cumple tu servicio social en proyectos reales que generan transformación social y profesionalismo.</p>
                         </div>
 
                         <!-- Practicante -->
@@ -1142,12 +1151,12 @@
 
                         <!-- Título -->
                         <h3
-                            class="text-3xl md:text-4xl font-extrabold mb-4 bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] bg-clip-text text-transparent animate-gradient-x drop-shadow-lg">
+                            class="text-3xl md:text-4xl font-extrabold mb-4 bg-gradient-to-r from-[#C49E4F] via-[#005DAA] to-[#C49E4F] bg-clip-text text-transparent animate-gradient-x drop-shadow-lg text-left">
                             Apoya nuestra misión
                         </h3>
 
                         <!-- Texto motivacional -->
-                        <p class="text-lg text-gray-800/90 mb-8 leading-relaxed">
+                        <p class="text-lg text-gray-800/90 mb-8 leading-relaxed text-left">
                             Cada <span class="font-bold text-accent">donación</span> transforma realidades. Gracias a ti impulsamos educación, cultura y tecnología en nuestra
                             comunidad.
                             <br />
@@ -1185,10 +1194,10 @@
                 <div class="max-w-6xl mx-auto px-6 relative z-10">
                     <!-- Título -->
                     <h3
-                        class="text-center text-3xl md:text-4xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-[#005DAA] via-[#C49E4F] to-[#005DAA] bg-clip-text text-transparent animate-gradient-x">
+                        class="text-left text-3xl md:text-4xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-[#005DAA] via-[#C49E4F] to-[#005DAA] bg-clip-text text-transparent animate-gradient-x text-left">
                         Nuestros Aliados y Patrocinadores
                     </h3>
-                    <p class="text-center text-gray-600 mb-12 text-lg">Gracias a quienes impulsan nuestro movimiento</p>
+                    <p class="text-left text-gray-600 mb-12 text-lg">Gracias a quienes impulsan nuestro movimiento</p>
 
                     <!-- Swiper Carousel -->
                     <div class="swiper patrocinadoresSwiper">
@@ -1270,9 +1279,9 @@
                     class="absolute left-1/2 top-2/3 -translate-x-1/2 w-[35vw] h-[35vw] bg-gradient-to-br from-[#C49E4F]/10 via-[#005DAA]/10 to-transparent blur-3xl rounded-full opacity-60 pointer-events-none z-0"></div>
 
                 <div class="relative z-10 max-w-7xl mx-auto px-6">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center lg:justify-items-start">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 justify-items-center lg:justify-items-start">
                         <!-- Logo & Claim modernizado -->
-                        <div class="flex flex-col items-left text-left max-w-xs w-full mx-auto animate-fade-in-up">
+                        <div class="flex flex-col items-left text-left max-w-xs w-full mr-auto lg:mx-auto animate-fade-in-up">
                             <img
                                 src="https://res.cloudinary.com/hriosisc/image/upload/v1756390139/TijuanaInnovadora/logos-organizacion/LogoTI_gmpqnf.png"
                                 class="h-20 mb-3 drop-shadow-2xl hover:scale-105 transition duration-300"
@@ -1285,7 +1294,7 @@
                         </div>
 
                         <!-- Navegación rápida dinámica -->
-                        <div class="animate-fade-in-up delay-100">
+                        <div class="animate-fade-in-up delay-100 hidden md:block">
                             <h4 class="text-accent font-bold mb-4 tracking-wide uppercase">Navegación</h4>
                             <ul class="space-y-2 text-sm">
                                 <li><a href="#home" class="hover:text-accent transition font-semibold">Inicio</a></li>
@@ -1297,26 +1306,38 @@
                         </div>
 
                         <!-- Datos de contacto -->
-                        <div class="animate-fade-in-up delay-200">
-                            <h4 class="text-accent font-bold mb-4 tracking-wide uppercase">Contacto</h4>
-                            <ul class="space-y-3 text-sm">
-                                <li class="flex items-center gap-2">
-                                    <i class="fas fa-phone-alt text-accent"></i>
-                                    <a href="tel:6643425615" class="hover:text-accent transition">664 635 63 37</a>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fas fa-envelope text-accent"></i>
-                                    <a href="mailto:info@tijuanainnovadora.com" class="hover:text-accent transition">info@tijuanainnovadora.org</a>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fas fa-map-marker-alt text-accent"></i>
-                                    <span>Tijuana, B.C.</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="far fa-clock text-accent"></i>
-                                    <span>Lun-Vie 10 am – 4 pm</span>
-                                </li>
-                            </ul>
+                        <div class="flex flex-row justify-between gap-4 w-full md:block">
+                            <div class="animate-fade-in-up delay-100 md:hidden">
+                                <h4 class="text-accent font-bold mb-4 tracking-wide uppercase">Navegación</h4>
+                                <ul class="space-y-2 text-sm">
+                                    <li><a href="#home" class="hover:text-accent transition font-semibold">Inicio</a></li>
+                                    <li><a href="./quienes-somos/index.html" class="hover:text-accent transition font-semibold">Quienes somos</a></li>
+                                    <li><a href="./eventos/index.html" class="hover:text-accent transition font-semibold">Eventos</a></li>
+                                    <li><a href="./participa/index.html" class="hover:text-accent transition font-semibold">Participa</a></li>
+                                    <li><a href="./contacto/index.html" class="hover:text-accent transition font-semibold">Contacto</a></li>
+                                </ul>
+                            </div>
+                            <div class="animate-fade-in-up delay-200">
+                                <h4 class="text-accent font-bold mb-4 tracking-wide uppercase">Contacto</h4>
+                                <ul class="space-y-3 text-sm">
+                                    <li class="flex items-center gap-2">
+                                        <i class="fas fa-phone-alt text-accent"></i>
+                                        <a href="tel:6643425615" class="hover:text-accent transition">664 635 63 37</a>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fas fa-envelope text-accent"></i>
+                                        <a href="mailto:info@tijuanainnovadora.com" class="hover:text-accent transition">info@tijuanainnovadora.org</a>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fas fa-map-marker-alt text-accent"></i>
+                                        <span>Tijuana, B.C.</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="far fa-clock text-accent"></i>
+                                        <span>Lun-Vie 10 am – 4 pm</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 
                         <!-- Mapa + Redes sociales -->
